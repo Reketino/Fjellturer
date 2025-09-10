@@ -20,10 +20,9 @@ export default function GimsdalstindPage() {
 
         <h2 className=" text-2xl p-8 ">Turbeskrivelse</h2>
         <p>
-          {" "}
-          Gimsdaldstind er med sine 1007 høydemeter over havet en av det mest
-          spektakulære turene man kan ta i Sykkylvsområdet
-        </p>
+          Gimsdaldstind er med sine 1007 høydemeter over havet,
+          en av det mange flotte turene man kan ta i Sykkylven
+         </p>
 
         <div className="text-center p-6 ">
           <p>
@@ -48,11 +47,27 @@ export default function GimsdalstindPage() {
             Videre fra parkeringa følger man veien til Høyseth, for så å gå opp
             til Gimsdalen.
           </p>
+          <iframe
+           src="https://www.google.com/maps/embed?pb=!4v1757532114647!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzQycWJORVE.!2m2!1d62.37464592857454!2d6.604316148612335!3f37.68798162662645!4f2.1572550912626838!5f0.45095857009"
+           width="600"
+           height="450"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-64 sm:h-96"
+          />
+          <p className="font-size-sm font-semibold mb-6">
+            Her ser man veien opp mot Høyseth, med Gimsdalstinden fremst, Hammarsettindene lenger bak og Borgundkollen til venstre.
+          </p>
+          <p className="mb-6">
+            Grusveien går helt opp til Gimsdalen.
+          </p>
 
+        
           <p>
-            {" "}
-            Man kan også gå opp fra andre siden på Blindheimsbakkene, dette er
-            en god del kortere.{" "}
+          Man kan også gå opp fra andre siden på Blindheimsbakkene, dette er
+            en god del kortere.
           </p>
         </div>
 
