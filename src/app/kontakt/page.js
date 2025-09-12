@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import ImageCard from "@/components/imagecard";
+import CoffeeWidget from "@/components/CoffeeWidget";
 
 export default function KontaktPage() {
   return (
@@ -11,7 +12,7 @@ export default function KontaktPage() {
         med meg!
       </p>
       <ImageCard />
-    </div>
+      </div>
    );
 }
 
