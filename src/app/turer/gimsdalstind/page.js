@@ -17,7 +17,7 @@ export default function GimsdalstindPage() {
           </p>
         </div>
 
-        <h2 className="text-2xl p-8">Turbeskrivelse</h2>
+        <h2 className="text-2xl mt-1">Turbeskrivelse</h2>
         <p className="mb-6">
           Gimsdaldstind er med sine 1007 høydemeter over havet,
           en av de mange flotte turene man kan ta i Sykkylven.
@@ -54,7 +54,7 @@ export default function GimsdalstindPage() {
         </section>
          
          
-        <p className="mb-6">
+        <p className="mb-6 mt-10">
           Videre fra parkeringa følger man veien til Høyseth, for så å gå opp til Gimsdalen.
         </p>
         
@@ -65,28 +65,28 @@ export default function GimsdalstindPage() {
        <section className="grid grid-cols-2 gap-6">
       <div>
         <img
-        src="/råsbru.jpg"
+        src="/ned til rås.gif"
         alt="Råsen til broen"
         className="rounded-lg shadow-md w-full h-96 object-contain"
          />
         <p className="mt-2 text-center font-bold">
-        Her er råsen som fører til broen som går over elven
+        Her er råsen som fører ned til broen.
         </p>
       </div>
       
        <div>
         <img
-        src="/brua.jpg"
+        src="/ned til bro.gif"
         alt="Broen"
         className="rounded-lg shadow-md w-full h-96 object-contain"
          />
         <p className="mt-2 text-center font-bold">
-        Her ser man broen oppe til venstre
+        Her kommer man ned til broen
         </p>
       </div>
        </section>
         
-        <p>
+        <p className="mt-10">
           Man kan også gå opp fra andre siden på Blindheimsbakkene, dette er
           en god del kortere.
         </p>
