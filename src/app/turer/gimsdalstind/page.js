@@ -59,7 +59,7 @@ export default function GimsdalstindPage() {
         </p>
         
         <p className="mb-6">
-          Når man kommer til postkassa på Gimsdalen, tar man til høyre ned råsen, man vil da få øye på en bro
+          Når man kommer til postkassa på Gimsdalen, tar man til høyre ned råsen, man vil da få øye på en bro.
         </p>
          
        <section className="grid grid-cols-2 gap-6">
@@ -86,10 +86,44 @@ export default function GimsdalstindPage() {
       </div>
        </section>
         
-        <p className="mt-10">
-          Man kan også gå opp fra andre siden på Blindheimsbakkene, dette er
+        <h2 className="mt-10 font-extrabold">
+           Fra Blindheimsbakkene
+        </h2>
+        <p className="mt-5 mb-6">
+          Man kan også gå opp fra andre siden av Vik elven på Blindheimsbakkene, dette er
           en god del kortere.
         </p>
+
+        <section className="grid grid-cols-2 gap-6">
+          <div className="rounded-lg overflow-hidden shadow-lg flex-1">
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!4v1757775126054!6m8!1m7!1sSN6gbrjGmWhoA4uk-4mMVA!2m2!1d62.37427422446464!2d6.586577241891676!3f115.62029880003583!4f5.851649908097372!5f0.618543023297123"
+          className="w-full h-64 sm:h-96"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"/>
+              <p className="mt-10 font-bold">
+               Her er grusveien hvor man kjører frem til parkeringen, NB: veien har bom som det koster 70kr for å passere!.
+              </p>
+              </div>
+               
+               <div className="rounded-lg overflow-hidden shadow-lg flex-1">
+              <img
+              src="/parkering bheim.jpeg"
+              alt="Parkering Blindheimsbakkene"
+              className="rounded-lg shadow-md w-full h-96 object-contain"/>
+              <p className="mt-10 font-bold">
+                Etter å ha fulgt veien et godt stykke innover, vil man komme til parkeringen som vist over🅿️
+              </p>
+              </div>
+              </section>
+
+      
+
+        
+
+
         <Gimsdalstind />
       </main>
     </div>
