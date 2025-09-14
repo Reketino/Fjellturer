@@ -103,7 +103,7 @@ export default function GimsdalstindPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"/>
-              <p className="mt-10 font-bold">
+              <p className="mt-2 font-bold">
                Her er grusveien hvor man kjører frem til parkeringen, NB: veien har bom som det koster 70kr for å passere!.
               </p>
               </div>
@@ -113,7 +113,7 @@ export default function GimsdalstindPage() {
               src="/parkering bheim.jpeg"
               alt="Parkering Blindheimsbakkene"
               className="rounded-lg shadow-md w-full h-96 object-contain"/>
-              <p className="mt-10 font-bold">
+              <p className="mt-2 font-bold">
                 Etter å ha fulgt veien et godt stykke innover, vil man komme til parkeringen som vist over🅿️
               </p>
               </div>
