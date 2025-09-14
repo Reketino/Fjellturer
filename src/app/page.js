@@ -1,8 +1,5 @@
 import Image from "next/image";
 
-import CoffeeWidget from "@/components/CoffeeWidget";
-
-
 export default function Home() {
   return (
     <div className="font-sans flex flex-col min-h-screen">
@@ -12,7 +9,7 @@ export default function Home() {
         <img src="/Mann på topp.jpg" alt="Mann på topp" className="rounded-full filter brightness-90 contrast-125 hover:brightness-110 transition duration-300" />
         <p>Oppdag de spektakulære fjellene og turene i Sykkylven!, med beskrivelse.</p>
       </main>
-      <CoffeeWidget />
+      
     </div>
   );
 }
