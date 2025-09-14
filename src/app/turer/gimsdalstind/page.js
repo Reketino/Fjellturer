@@ -12,22 +12,23 @@ export default function GimsdalstindPage() {
             src="/gimsdalstinden.jpg"
             alt="Gimsdalstinden"
             className="rounded-full justify-center-safe set-h-[50px] " />
-          <p className="font-serif font-extralight p-2">
+          <p className="font-light mt-1">
             Gimsdalstinden sett i fra Gimsdalssætra
           </p>
-        </div>
+        
 
-        <h2 className="text-2xl mt-1">Turbeskrivelse</h2>
-        <p className="mb-6">
+        <h2 className="text-2xl mt-5 font-extrabold">Turbeskrivelse</h2>
+        <p className="mt-4">
           Gimsdaldstind er med sine 1007 høydemeter over havet,
-          en av de mange flotte turene man kan ta i Sykkylven.
+          en av de mange flotte turene man kan ta i Sykkylven. Turen byr på en magisk utover Sykkylven, Hammarsettindene & Straumshornet.
         </p>
-
-        <p className="mb-6">
+       
+        <p className="mt-6">
           Turen starter ved parkeringen til Høyseth, hvis man går opp fra Vikedalen.
         </p>
+        </div>
 
-        <section className="flex flex-col md:flex-row gap-6">
+        <section className="flex flex-col md:flex-row gap-6 mt-2">
           <div className="rounded-lg overflow-hidden shadow-lg flex-1">
             <iframe
               src= "https://www.google.com/maps/embed?pb=!4v1757708371385!6m8!1m7!1sWyZDdLBkccbXpz3S_ejv-g!2m2!1d62.3752727172618!2d6.599139845354096!3f125.24832946725054!4f0.7656633566013937!5f1.484598564989514"
@@ -104,7 +105,7 @@ export default function GimsdalstindPage() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"/>
               <p className="mt-2 font-bold">
-               Her er grusveien hvor man kjører frem til parkeringen, NB: veien har bom som det koster 70kr for å passere!.
+               Her er grusveien hvor man kjører frem til parkeringen, NB: Bomvei 70 kroner for å passere.
               </p>
               </div>
                
