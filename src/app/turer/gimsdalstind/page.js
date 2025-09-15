@@ -15,15 +15,17 @@ export default function GimsdalstindPage() {
           <p className="font-light mt-1">
             Gimsdalstinden sett i fra Gimsdalssætra
           </p>
-        
-
-        <h2 className="text-2xl mt-5 font-extrabold">Turbeskrivelse</h2>
-        <p className="mt-4">
+           
+           <p className="mt-4">
           Gimsdaldstind er med sine 1007 høydemeter over havet,
           en av de mange flotte turene man kan ta i Sykkylven. Turen byr på en magisk utover Sykkylven, Hammarsettindene & Straumshornet.
         </p>
-       
-        <p className="mt-6">
+        
+        <h1 className="text-2xl mt-5 font-extrabold">Turbeskrivelse</h1>
+       <h2 className="mt-3 font font-extrabold">
+        Fra Vikedalen
+       </h2>
+        <p className="mt-1">
           Turen starter ved parkeringen til Høyseth, hvis man går opp fra Vikedalen.
         </p>
         </div>
@@ -111,14 +113,48 @@ export default function GimsdalstindPage() {
                
                <div className="rounded-lg overflow-hidden shadow-lg flex-1">
               <img
-              src="/parkering bheim.jpeg"
+              src="/veienvidere.gif"
               alt="Parkering Blindheimsbakkene"
               className="rounded-lg shadow-md w-full h-96 object-contain"/>
               <p className="mt-2 font-bold">
                 Etter å ha fulgt veien et godt stykke innover, vil man komme til parkeringen som vist over🅿️
               </p>
               </div>
-              </section>
+            </section>
+
+            <p className="mt-5">
+              Etter man har parkert, er det bare å følge gruseveien som vist på bildet til høyre.
+            </p>
+            <p className="mt-2">
+              Videre langs denne grusveien, vil man komme til noen hytter. Her er det mulighet for å ta en snarvei.
+            </p>
+
+            <section className="grid grid-cols-2 gap-0 mt-3">
+              <div className="rounded-lg overflow-hidden shadow-lg flex-1">
+                <img
+                src="/snarvei.jpeg"
+                alt="snarveien"
+                className="rounded-lg shadow-md w-full h-screen object-contain"/>
+                <p className="mt-2 font-bold">
+                  Opp her går snarveien.
+                </p>
+            </div>
+
+            <div className="rounded-lg overflow-hidden shadow-lg flex-1">
+              <img
+              src="/vei.jpeg"
+              alt="vei med gimsdalstind i bakgrunn"
+              className="rounded-lg shadow-md w-full h-screen object-contain"/>
+              <p className=" mt-2 font-bold">
+              Vis ikke er det bare å følge veien videre, med god utsikt til det endelige målet🚩.
+             </p>
+            </div>
+            </section>
+
+         
+             
+
+              
 
       
 
