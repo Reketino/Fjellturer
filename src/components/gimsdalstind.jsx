@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import emojiMap from "@/utils/emojiMap"; 
 
+
 export default function Gimsdalstind() {
   const [weather, setWeather] = useState(null);
 

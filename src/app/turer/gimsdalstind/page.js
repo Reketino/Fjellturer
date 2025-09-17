@@ -1,8 +1,14 @@
+"use client";
+
+import { useState } from "react";
 import React from "react";
 import Link from "next/link";
 import Gimsdalstind from "@/components/gimsdalstind";
+import Rating from "@/components/Rating";
 
 export default function GimsdalstindPage() {
+  const [rating, setRating] =useState (0);
+  
   return (
     <div className="text-center flex-center gap-2">
       <main className="flex flex-col items-center flex-1  sm:p-20">
@@ -191,9 +197,14 @@ export default function GimsdalstindPage() {
          <h2 className="mt-3 font-extrabold">Turen mot Toppen</h2>
         </section>
 
-      
+      <div className="p-8">
+        <p>Hvor godt likte du forklaringen?</p>
+        <Rating max={5} value={rating} onChange={setRating} />
+        <p className="mt-2"> du ga {rating} stjerner</p>
+        </div>
 
-        <Gimsdalstind />
+
+   <Gimsdalstind />
       </main>
     </div>
   );
