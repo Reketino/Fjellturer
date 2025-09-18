@@ -2,10 +2,11 @@
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ThemeToggle from "@/components/ThemeToggle";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import CoffeeButton from "@/components/CoffeeButton";
-import ThemeToggle from "@/components/ThemeToggle";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,19 +25,19 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
+        
          <div className="absolute top-4 right-4">
           <ThemeToggle />
         </div>
         <Navbar />
-        
+         
         <main className="flex-1">
           {children}
           </main>
-
+          
         <Footer />
         <CoffeeButton />
-        
-      </body>
+       </body>
     </html>
   );
 }
