@@ -6,8 +6,8 @@ export default function ThemeToggle() {
     const [theme, setTheme] = useState ("light");
 
     useEffect(() => {
-       if (typeof window === "undefined") {
-        const saved = localStorage.localStorage.getItem("theme");
+       if (typeof window !== "undefined") {
+        const saved = localStorage.getItem("theme");
         if (saved === "light" || saved === "dark") {
             setTheme(saved);
             document.documentElement.setAttribute("data-theme", saved);
@@ -18,7 +18,7 @@ export default function ThemeToggle() {
 function toggleTheme() {
     const next = theme == "light" ? "dark" : "light";
     setTheme(next);
-    if (typeof window == "undefined") {
+    if (typeof window !== "undefined") {
         localStorage.setItem("theme", next);
         document.documentElement.setAttribute("data-theme", next);
     }
