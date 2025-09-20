@@ -15,7 +15,7 @@ export default function Rutevelger() {
 
   return (
     <div className="mt-8 w-full max-w-5xl">
-      {/* Knappene */}
+      
       <div className="flex gap-4 justify-center mb-6">
         <button
           onClick={() => toggleRute("vikedalen")}
@@ -120,7 +120,7 @@ export default function Rutevelger() {
         </section>
       )}
        
-      {/* Blindheimsbakkane innhold */}
+   
     {valgt.includes("blindheimsbakkane") && (
         <section className="mt-10">
           <h2 className="text-center text-xl font-bold">Fra Blindheimsbakkane</h2>
