@@ -119,8 +119,8 @@ export default function GimsdalstindPage() {
           Nå kommer man til det partiet på turen, som er mest krevende & kan føles luftig.
           </h2>
 
-          <section className="grid grid-cols-2 gap-6 mt-2">
-            <div className="flex-2 rounded-lg overflow-hidden shadow-lg">
+          <section className="grid grid-cols-2 gap-4 mt-2">
+            <div className="flex-1 rounded-lg overflow-hidden shadow-lg">
               <img
               src="/krevendeparti.gif"
               alt="Starten på det krevende partiet"
@@ -131,7 +131,7 @@ export default function GimsdalstindPage() {
               </p>
               </div>
 
-              <div className="flex-2 rounded-lg overflow-hidden shadow-lg">
+              <div className="flex-1 rounded-lg overflow-hidden shadow-lg">
               <img
               src="/kommerhit.jpeg"
               alt="Hit kommer man"
@@ -142,7 +142,7 @@ export default function GimsdalstindPage() {
               </p>
               </div>
 
-              <div className="flex-2 rounded-lg overflow-hidden shadow-lg">
+              <div className="flex-1 rounded-lg overflow-hidden shadow-lg">
               <img
               src="/følgdenne.gif"
               alt="Følge denne eggen"
@@ -153,30 +153,91 @@ export default function GimsdalstindPage() {
               </p>
               </div>
 
-              <div className="flex-2 rounded-lg overflow-hidden shadow-lg">
+              <div className="flex-1 rounded-lg overflow-hidden shadow-lg">
               <img
               src="/veivalg.gif"
               alt="To stier"
               className="w-full h-64 sm:h-96 object-contain shadow-md rounded-lg"
               />
-              <p className="mt-2 font-bold text-center object-contain">
-                Litt lenger oppe, kommer man hit hvor man kan velge å gå til venstre.
-               
+              <p className="mt-2 font-bold text-center text-sm sm:text-base leading-relaxed">
+                Ett lite stykke lenger opp, kommer man hit hvor man kan gå rett frem eller til venstre.
+               </p>
+                <p className="mt-2 font-bold text-center text-sm sm:text-base leading-relaxed">
+                Går man til venstre følger man rås & kan velge å gå oppå eggen litt lenger borte eller bare følge råsen.
               </p>
-               <p className="mt-2 font-bold text-center object-contain">
-                Eller den mer luftige veien langs eggen.
+               <p className="mt-2 font-bold text-center text-sm sm:text-base leading-relaxed">
+                Går man rett frem vil man følge eggen.
+              </p>
+             
+              </div> 
+          </section>
+           
+           <div className="flex-1 rounded-lg overflow-hidden shadow-lg mt-5">
+              <img
+              src="/sistedel.gif"
+              alt="Siste biten mot toppen"
+              className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
+              />
+              <p className="mt-2 font-bold text-center text-sm sm:text-base leading-relaxed">
+                Her ser man hvor man kommer igjen, om man går eggen eller råsen.
               </p>
               </div>
-          </section>
+               
+               <div className="flex-1 flex-col rounded-lg overflow-hidden shadow-lg mt-5">
+              <h1 className="font-extrabold text-4xl p-2 text-center">
+                Toppen!
+              </h1>
+               <p className="font-light text-center mb-2">
+                Etter dette partiet er man oppe på Gimsdalstind.
+              </p>
+              <img
+              src="/Toppen3.jpeg"
+              alt="Toppen"
+              className="rounded-lg shadow-md w-full h-96 object-contain"
+              />
+              <p className="text-center">
+                Fantastsk utsikt over Sykkylven & postkasse med bok man kan skrive seg inn i.
+               </p>
+              </div>
 
-         
-        
+              <h2 className="font-semibold text-center">
+                    På toppen vil man ha panorama utsikt til andre topper rundt!
+                  </h2>
+
+                <section className="grid grid-cols-1 gap-4">
+                <div className="flex-1 flex-col rounded-lg overflow-hidden shadow-lg mt-5">
+              <img
+              src="/Hammers.png"
+              alt="Toppene rundt"
+              className="rounded-lg shadow-md w-full h-96 object-contain"
+              />
+              <p className="mt-2 font-bold text-center">
+                Her ser vi: Hammersettind fremst, Langfjellene til venstre, Blåtind & Lafjellet helt bak til venstre.
+                 </p>
+                 <img
+              src="/Straumshornet.png"
+              alt="Toppene rundt"
+              className="rounded-lg shadow-md w-full h-96 object-contain"
+              />
+              <p className="mt-2 font-bold text-center">
+                Her ser vi: Dravlausegga & Straumshornet.
+                 </p>
+                 <img
+              src="/Borgundkollen.png"
+              alt="Toppene rundt"
+              className="rounded-lg shadow-md w-full h-96 object-contain"
+              />
+              <p className="mt-2 font-bold text-center">
+                Her ser vi: Borgundkollen.
+                 </p>
+                </div>
+               </section>
+             
+             <h1 className="text-center text-2xl font-extrabold">
+              God Tur⛰️!.
+             </h1>
           
-     
-
-      
-
-      <div className="p-8">
+          <div className="p-8">
         <p>Hvor godt likte du forklaringen?</p>
         <Rating max={5} value={rating} onChange={setRating} />
         <p className="text-center mt-2"> du ga {rating} stjerner</p>
