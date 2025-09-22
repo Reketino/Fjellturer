@@ -211,7 +211,7 @@ export default function GimsdalstindPage() {
               alt="Toppene rundt"
               className="rounded-lg shadow-md w-full h-96 object-contain"
               />
-              <p className="mt-2 font-bold text-center">
+              <p className="mt-2 mb-2 font-bold text-center">
                 Her ser vi: Hammersettind fremst, Langfjellene til venstre, Blåtind & Lafjellet helt bak til venstre.
                  </p>
                  <img
@@ -219,7 +219,7 @@ export default function GimsdalstindPage() {
               alt="Toppene rundt"
               className="rounded-lg shadow-md w-full h-96 object-contain"
               />
-              <p className="mt-2 font-bold text-center">
+              <p className="mt-2 mb-2 font-bold text-center">
                 Her ser vi: Dravlausegga & Straumshornet.
                  </p>
                  <img
@@ -227,13 +227,13 @@ export default function GimsdalstindPage() {
               alt="Toppene rundt"
               className="rounded-lg shadow-md w-full h-96 object-contain"
               />
-              <p className="mt-2 font-bold text-center">
+              <p className="mt-2 mb-2 font-bold text-center">
                 Her ser vi: Borgundkollen.
                  </p>
                 </div>
                </section>
              
-             <h1 className="text-center text-2xl font-extrabold">
+             <h1 className="text-center text-2xl font-extrabold mt-6">
               God Tur⛰️!.
              </h1>
           
