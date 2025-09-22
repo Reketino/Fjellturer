@@ -4,14 +4,14 @@ import { useEffect, useState } from "react";
 import emojiMap from "@/utils/emojiMap"; 
 
 
-export default function Gimsdalstind() {
+export default function Værdata({title,lat,lon,altitude}) {
   const [weather, setWeather] = useState(null);
 
   useEffect(() => {
     async function fetchWeather() {
       try {
         const res = await fetch(
-          "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=62.3416&lon=6.655&altitude=90",
+          `https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${lat}&lon=${lon}&altitude=${altitude}`,
           {
             headers: {
               "User-Agent": "fjellturer-app/1.0 (bjornevensk8@gmail.com)",
@@ -42,7 +42,7 @@ export default function Gimsdalstind() {
 
   return (
     <div className="flex flex-col items-center mt-8 space-y-4 text-center">
-      <h1 className="text-2xl font-bold">Gimsdalstind ⛰️</h1>
+      <h1 className="text-2xl font-bold">{title} ⛰️</h1>
       <p>🌡️ Temperatur: {weather.temp} °C</p>
       <p>💨 Vind: {weather.wind} m/s</p>
 

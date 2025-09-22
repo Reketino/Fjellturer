@@ -12,8 +12,7 @@ export default function Home() {
         className="rounded-full filter brightness-90 contrast-125 hover:brightness-110 transition duration-300 mb-2" />
         <p className="font-bold ">
           Oppdag de spektakulære fjellene og turene i Sykkylven!, med beskrivelse.</p>
-      </main>
-      
+      </main> 
     </div>
   );
 }

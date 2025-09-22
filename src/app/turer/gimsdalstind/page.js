@@ -3,7 +3,7 @@
 import { useState } from "react";
 import React from "react";
 import Link from "next/link";
-import Gimsdalstind from "@/components/gimsdalstind";
+import Værdata from "@/components/Værdata";
 import Rating from "@/components/Rating";
 import Rutevelger from "@/components/Rutevelger";
 
@@ -243,7 +243,12 @@ export default function GimsdalstindPage() {
         <p className="text-center mt-2"> du ga {rating} stjerner</p>
         </div>
 
-   <Gimsdalstind />
+   <Værdata 
+    title="Gimsdalstind" 
+        lat={62.3416} 
+        lon={6.655} 
+        altitude={1007} 
+   />
      </div>
   );
 }

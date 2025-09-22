@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useState } from "react";
 import Rating from "@/components/Rating";
+import Værdata from "@/components/Værdata";
 
 export default function UrfjelletPage() {
     const [rating, setRating] =useState (0);
@@ -27,7 +28,12 @@ export default function UrfjelletPage() {
                         <Rating max={5} value={rating} onChange={setRating} />
                         <p className="mt-2"> du ga {rating} stjerner</p>
                         </div>
-                
+                <Værdata 
+                    title="Urfjellet" 
+                        lat={62.325179} 
+                        lon={6.682832} 
+                        altitude={1267} 
+                   />
 
             </main>
         </div>
