@@ -12,6 +12,8 @@ const emojiMap = {
   snow: { text: "Snø ", emoji: "❄️" },
   fog: { text: "Tåke ", emoji: "🌫️" },
   thunderstorm: { text: "Tordenvær ", emoji: "⛈️" },
+   heavysnow: { text: "Kraftig Snø", emoji: "❄️❄️" },
+    heavysnowshowersday: { text: "Kraftige Snøbyger", emoji: "🌨️" },
 };
 
 export default emojiMap;

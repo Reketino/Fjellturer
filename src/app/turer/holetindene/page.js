@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useState } from "react";
 import Rating from "@/components/Rating";
+import Værdata from "@/components/Værdata";
 
 export default function HoletindenPage() {
     const [rating, setRating] =useState (0);
@@ -23,7 +24,12 @@ export default function HoletindenPage() {
                         <p className="mt-2"> du ga {rating} stjerner</p>
                         </div>
                 
-
+ <Værdata 
+    title="Holetindene" 
+        lat={62.282961} 
+        lon={6.724356} 
+        altitude={1242} 
+   />
             </main>
         </div>
     );

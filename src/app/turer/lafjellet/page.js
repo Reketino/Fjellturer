@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useState } from "react";
 import Rating from "@/components/Rating";
+import Værdata from "@/components/Værdata";
 
 export default function LafjelletPage() {
     const [rating, setRating] =useState (0);
@@ -14,7 +15,10 @@ export default function LafjelletPage() {
                 <h1>Lafjellet</h1>
                
                 <div className="relative">
-                <img src="/lafjellet.png" alt="Lafjellet" className="rounded-full justify-center-safe set-h-[300px] "/>
+                <img
+                 src="/lafjellet.png" 
+                 alt="Lafjellet" 
+                 className="rounded-full justify-center-safe set-h-[300px] "/>
                     <p>Baksiden av Lafjellet sett i fra parkeringen hvor man starter</p>
                    </div>
                 <div className="p-8">
@@ -22,7 +26,12 @@ export default function LafjelletPage() {
                         <Rating max={5} value={rating} onChange={setRating} />
                         <p className="mt-2"> du ga {rating} stjerner</p>
                         </div>
-                
+                <Værdata 
+                    title="Lafjellet" 
+                        lat={62.327770} 
+                        lon={6.712563} 
+                        altitude={1161} 
+                   />
 
             </main>
         </div>
