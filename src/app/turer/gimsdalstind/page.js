@@ -40,8 +40,8 @@ export default function GimsdalstindPage() {
         <Image
           src="/veiskille.gif"
           alt="Veien deler seg."
-       width={800}
-       height={400}
+          width={800}
+          height={400}
           className="rounded-lg shadow-md w-full h-screen object-contain"
         />
         <p className="text-center mt-2 font-bold">
@@ -132,34 +132,34 @@ export default function GimsdalstindPage() {
         luftig.
       </h2>
 
-      <section className="grid grid-cols-2 gap-4 mt-2">
-        <div className="flex-1 rounded-lg overflow-hidden shadow-lg">
+      <section className="grid grid-cols-2 gap-6 mt-2">
+        <div className="rounded-lg overflow-hidden shadow-lg">
           <Image
-            src="/krevendeparti.gif"
+            src="/krevendeparti2.gif"
             alt="Starten på det krevende partiet"
             width={800}
             height={400}
             className="w-full h-64 sm:h-96 object-contain shadow-md rounded-lg"
           />
           <p className="mt-2 font-bold text-center">
-            Her begynner man oppover mot toppen, med enkel klyving.
+            Her begynner man oppover, med enkel klyving.
           </p>
         </div>
 
-        <div className="flex-1 rounded-lg overflow-hidden shadow-lg">
+        <div className="rounded-lg overflow-hidden shadow-lg">
           <Image
-            src="/kommerhit.jpeg"
+            src="/kommerhit.jpg"
             alt="Hit kommer man"
             width={800}
             height={400}
             className="w-full h-64 sm:h-96 object-contain shadow-md rounded-lg"
           />
           <p className="mt-2 font-bold text-center">
-            Etter enkel klyving, vil man komme opp hit.
+            Etter klyvingen, vil man komme opp hit.
           </p>
         </div>
 
-        <div className="flex-1 rounded-lg overflow-hidden shadow-lg">
+        <div className="rounded-lg overflow-hidden shadow-lg">
           <Image
             src="/følgdenne.gif"
             alt="Følge denne eggen"
@@ -172,7 +172,7 @@ export default function GimsdalstindPage() {
           </p>
         </div>
 
-        <div className="flex-1 rounded-lg overflow-hidden shadow-lg">
+        <div className="rounded-lg overflow-hidden shadow-lg">
           <Image
             src="/veivalg.gif"
             alt="To stier"
@@ -180,21 +180,16 @@ export default function GimsdalstindPage() {
             height={400}
             className="w-full h-64 sm:h-96 object-contain shadow-md rounded-lg"
           />
-          <p className="mt-2 font-bold text-center text-sm sm:text-base leading-relaxed">
-            Ett lite stykke lenger opp, kommer man hit hvor man kan gå rett frem
-            eller til venstre.
-          </p>
-          <p className="mt-2 font-bold text-center text-sm sm:text-base leading-relaxed">
-            Går man til venstre følger man rås & kan velge å gå oppå eggen litt
-            lenger borte eller bare følge råsen.
-          </p>
-          <p className="mt-2 font-bold text-center text-sm sm:text-base leading-relaxed">
-            Går man rett frem vil man følge eggen.
-          </p>
+          <div className="px-2 text-center">
+            <p className="mt-2 font-bold text-sm sm:text-base leading-relaxed max-w-xs mx-auto">
+              Ett lite stykke lenger opp, kan man følge eggen som er mer luftig
+              eller råsen til venstre
+            </p>
+          </div>
         </div>
       </section>
 
-      <div className="flex-1 rounded-lg overflow-hidden shadow-lg mt-5">
+      <div className=" rounded-lg overflow-hidden shadow-lg mt-5">
         <Image
           src="/sistedel.gif"
           alt="Siste biten mot toppen"
@@ -273,12 +268,7 @@ export default function GimsdalstindPage() {
         <p className="text-center mt-2"> du ga {rating} stjerner</p>
       </div>
 
-      <Værdata 
-      title="Gimsdalstind" 
-      lat={62.3416} 
-      lon={6.655} 
-      altitude={1007} 
-      />
+      <Værdata title="Gimsdalstind" lat={62.3416} lon={6.655} altitude={1007} />
     </div>
   );
 }

@@ -26,6 +26,8 @@ export default function UrfjelletPage() {
         </div>
         <p>Urfjellet sett i fra Koppen</p>
 
+        
+
         <div className="p-8">
           <p>Hvor godt likte du forklaringen?</p>
           <Rating max={5} value={rating} onChange={setRating} />
