@@ -6,6 +6,7 @@ import { useState } from "react";
 import Rating from "@/components/Rating";
 import Værdata from "@/components/Værdata";
 import Image from "next/image";
+import UrfjelletMap from "@/components/UrrfjelletMap";
 
 export default function UrfjelletPage() {
   const [rating, setRating] = useState(0);
@@ -25,8 +26,11 @@ export default function UrfjelletPage() {
           />
         </div>
         <p>Urfjellet sett i fra Koppen</p>
-
         
+        <h2 className="text-center text-xl font-extrabold">
+            Her er ruten opp til Urfjellet.
+           </h2>
+        <UrfjelletMap />
 
         <div className="p-8">
           <p>Hvor godt likte du forklaringen?</p>

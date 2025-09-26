@@ -74,7 +74,7 @@ export default function GimsdalstindPage() {
       </section>
 
       <section className="grid grid-cols-2 gap-6 mt-2">
-        <div className="flex-2 rounded-lg overflow-hidden shadow-lg">
+        <div className="flex-1 rounded-lg overflow-hidden shadow-lg">
           <Image
             src="/ut av skogen.jpeg"
             alt="Råsen etter skogspartiet"
