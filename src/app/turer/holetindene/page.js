@@ -7,6 +7,7 @@ import Rating from "@/components/Rating";
 import Værdata from "@/components/Værdata";
 import Image from "next/image";
 import HoletindeneMap from "@/components/HoletindeneMap";
+import RuteInfo from "@/components/RuteInfo";
 
 export default function HoletindenPage() {
   const [rating, setRating] = useState(0);
@@ -19,6 +20,14 @@ export default function HoletindenPage() {
           Holetindene finner du i vakre Velledalen, som er en 10 minutters kjøretur
           fra sentrum av Sykkylven.
         </p>
+        <RuteInfo
+                 rangering="RØD"
+                 rangeringFarge="text-red-500"
+                 hoydemeter={1242}
+                 vertikalStigning={1160}
+                 kilometer={10.68}
+                 tidsbruk="3-5 timer"
+                />
 
           <h2 className="text-center text-xl font-extrabold">
             Her er ruten opp til Holetindene.

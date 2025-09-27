@@ -1,5 +1,5 @@
 "use client;"
-
+import RuteInfo from "./RuteInfo";
 import { useState } from "react"
 
 export default function Rutevelger() {
@@ -49,9 +49,23 @@ export default function Rutevelger() {
       {valgt.includes("vikedalen") && (
         <section className="mt-10 max-w-4xl mx-auto px-4">
           <h2 className=" text-center text-xl font-bold">Fra Vikedalen</h2>
+           
+           <div className="flex items-center justify-center ">
+                     <RuteInfo
+                     rangering="RØD"
+                     rangeringFarge="text-red-500"
+                     hoydemeter={1007}
+                     vertikalStigning={968}
+                     kilometer={12.26}
+                     tidsbruk="3-5 timer"
+                    />
+                    </div>
+
           <p className=" text-center mt-2">
             Turen starter ved parkeringen til Høyseth, hvis man går opp fra
             Vikedalen.</p>
+            
+                     
           
            <section className="flex flex-col md:flex-row gap-6 mt-2">
           <div className="rounded-lg overflow-hidden shadow-lg flex-1">
@@ -124,10 +138,23 @@ export default function Rutevelger() {
     {valgt.includes("blindheimsbakkane") && (
         <section className="mt-10">
           <h2 className="text-center text-xl font-bold">Fra Blindheimsbakkane</h2>
+                     
+                     <div className="flex items-center justify-center ">
+                    <RuteInfo
+                     rangering="RØD"
+                     rangeringFarge="text-red-500"
+                     hoydemeter={1007}
+                     vertikalStigning={806}
+                     kilometer={7.65}
+                     tidsbruk="3-4 timer"
+                    />
+                    </div>
+
           <p className="text-center mt-2">
             Man kan også gå opp fra andre siden av Vik elven på Blindheimsbakkane,
             dette er en god del kortere.
           </p>
+                   
            <section className="grid grid-cols-2 gap-6">
           <div className="rounded-lg overflow-hidden shadow-lg flex-1">
             <iframe
