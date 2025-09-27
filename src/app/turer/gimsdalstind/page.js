@@ -8,6 +8,7 @@ import Rating from "@/components/Rating";
 import Rutevelger from "@/components/Rutevelger";
 import Image from "next/image";
 
+
 export default function GimsdalstindPage() {
   const [rating, setRating] = useState(0);
 
