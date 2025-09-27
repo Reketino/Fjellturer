@@ -1,15 +1,8 @@
-11-få-inn-kart-som-viser-ruten
-
-
+"use client";
 import { useState } from "react";
+import RuteInfo from "./RuteInfo";
 import BlindheimMap from "@/components/BlindheimMap";
 import VikedalenMap from "@/components/VikedalenMap";
-
-
-"use client;"
-import RuteInfo from "./RuteInfo";
-import { useState } from "react"
-develop
 
 export default function Rutevelger() {
   const [valgt, setValgt] = useState([]);
@@ -23,12 +16,12 @@ export default function Rutevelger() {
   };
 
   return (
-    <div className="mt-8 w-full max-w-5xl">
+    <div className="mt-8 w-full max-w-5xl mx-auto">
       <div className="flex gap-4 justify-center mb-6">
         <button
           onClick={() => toggleRute("vikedalen")}
           className={`px-4 py-2 rounded-lg font-bold shadow ${
-            valgt.includes("vikedalen") ? "bg-blue-600 text-white" : "bg-black"
+            valgt.includes("vikedalen") ? "bg-blue-600 text-white" : "bg-black text-white"
           }`}
         >
           Fra Vikedalen
@@ -36,9 +29,7 @@ export default function Rutevelger() {
         <button
           onClick={() => toggleRute("blindheimsbakkane")}
           className={`px-4 py-2 rounded-lg font-bold shadow ${
-            valgt.includes("blindheimsbakkane")
-              ? "bg-blue-600 text-white"
-              : "bg-black"
+            valgt.includes("blindheimsbakkane") ? "bg-blue-600 text-white" : "bg-black text-white"
           }`}
         >
           Fra Blindheimsbakkane
@@ -53,42 +44,21 @@ export default function Rutevelger() {
 
       {valgt.includes("vikedalen") && (
         <section className="mt-10 max-w-4xl mx-auto px-4">
-          <h2 className=" text-center text-xl font-bold">Fra Vikedalen</h2>
-           
-           <div className="flex items-center justify-center ">
-                     <RuteInfo
-                     rangering="RØD"
-                     rangeringFarge="text-red-500"
-                     hoydemeter={1007}
-                     vertikalStigning={968}
-                     kilometer={12.26}
-                     tidsbruk="3-5 timer"
-                    />
-                    </div>
-
-          <p className=" text-center mt-2">
-            Turen starter ved parkeringen til Høyseth, hvis man går opp fra
-11-få-inn-kart-som-viser-ruten
-            Vikedalen.
-          </p>
-
-            Vikedalen.</p>
-            
-                     
-          
-           <section className="flex flex-col md:flex-row gap-6 mt-2">
-          <div className="rounded-lg overflow-hidden shadow-lg flex-1">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!4v1757708371385!6m8!1m7!1sWyZDdLBkccbXpz3S_ejv-g!2m2!1d62.3752727172618!2d6.599139845354096!3f125.24832946725054!4f0.7656633566013937!5f1.484598564989514"
-              className="w-full h-64 sm:h-96"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+          <h2 className="text-center text-xl font-bold">Fra Vikedalen</h2>
+          <div className="flex justify-center mt-2">
+            <RuteInfo
+              rangering="RØD"
+              rangeringFarge="text-red-500"
+              hoydemeter={1007}
+              vertikalStigning={968}
+              kilometer={12.26}
+              tidsbruk="3-5 timer"
             />
-            <p className=" text-center font-semibold mt-2">Parkeringen i Vikedalen 🅿️.</p>
           </div>
- develop
+
+          <p className="text-center mt-2">
+            Turen starter ved parkeringen til Høyseth, hvis man går opp fra Vikedalen.
+          </p>
 
           <section className="flex flex-col md:flex-row gap-6 mt-2">
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
@@ -100,9 +70,7 @@ export default function Rutevelger() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
-              <p className=" text-center font-semibold mt-2">
-                Parkeringen i Vikedalen 🅿️.
-              </p>
+              <p className="text-center font-semibold mt-2">Parkeringen i Vikedalen 🅿️.</p>
             </div>
 
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
@@ -122,13 +90,11 @@ export default function Rutevelger() {
           </section>
 
           <p className="text-center mb-2 mt-6">
-            Videre fra parkeringa følger man veien til Høyseth, for så å gå opp
-            til Gimsdalen.
+            Videre fra parkeringa følger man veien til Høyseth, for så å gå opp til Gimsdalen.
           </p>
 
           <p className="text-center mb-3">
-            Når man kommer til postkassa på Gimsdalen, tar man til høyre ned
-            råsen, man vil da få øye på en bro.
+            Når man kommer til postkassa på Gimsdalen, tar man til høyre ned råsen, man vil da få øye på en bro.
           </p>
 
           <section className="grid grid-cols-2 gap-6">
@@ -150,7 +116,7 @@ export default function Rutevelger() {
                 className="rounded-lg shadow-md w-full h-96 object-contain"
               />
               <p className="mt-2 text-center font-bold">
-                Her kommer man ned til broen
+                Her kommer man ned til broen.
               </p>
             </div>
           </section>
@@ -158,7 +124,8 @@ export default function Rutevelger() {
           <p className="font-bold text-xl mt-6 flex justify-center">
             Her er turen fra Vikedalen.
           </p>
-          <div className="col-span-2 justify-items-center  mx-auto w-full  mt-2">
+
+          <div className="col-span-2 justify-items-center mx-auto w-full mt-2">
             <VikedalenMap />
           </div>
         </section>
@@ -166,31 +133,24 @@ export default function Rutevelger() {
 
       {valgt.includes("blindheimsbakkane") && (
         <section className="mt-10">
- 11-få-inn-kart-som-viser-ruten
-          <h2 className="text-center text-xl font-bold">
-            Fra Blindheimsbakkane
-          </h2>
-
           <h2 className="text-center text-xl font-bold">Fra Blindheimsbakkane</h2>
-                     
-                     <div className="flex items-center justify-center ">
-                    <RuteInfo
-                     rangering="RØD"
-                     rangeringFarge="text-red-500"
-                     hoydemeter={1007}
-                     vertikalStigning={806}
-                     kilometer={7.65}
-                     tidsbruk="3-4 timer"
-                    />
-                    </div>
 
- develop
+          <div className="flex items-center justify-center mt-2">
+            <RuteInfo
+              rangering="RØD"
+              rangeringFarge="text-red-500"
+              hoydemeter={1007}
+              vertikalStigning={806}
+              kilometer={7.65}
+              tidsbruk="3-4 timer"
+            />
+          </div>
+
           <p className="text-center mt-2">
-            Man kan også gå opp fra andre siden av Vik elven på
-            Blindheimsbakkane, dette er en god del kortere.
+            Man kan også gå opp fra andre siden av Vik elven på Blindheimsbakkane, dette er en god del kortere.
           </p>
- 11-få-inn-kart-som-viser-ruten
-          <section className="grid grid-cols-2 gap-6">
+
+          <section className="grid grid-cols-2 gap-6 mt-2">
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!4v1757775126054!6m8!1m7!1sSN6gbrjGmWhoA4uk-4mMVA!2m2!1d62.37427422446464!2d6.586577241891676!3f115.62029880003583!4f5.851649908097372!5f0.618543023297123"
@@ -201,49 +161,28 @@ export default function Rutevelger() {
                 referrerPolicy="no-referrer-when-downgrade"
               />
               <p className="text-center mt-2 font-bold">
-                Her er grusveien hvor man kjører frem til parkeringen, NB:
-                Bomvei 70 kroner for å passere.
+                Her er grusveien hvor man kjører frem til parkeringen, NB: Bomvei 70 kroner for å passere.
               </p>
             </div>
-
-                   
-           <section className="grid grid-cols-2 gap-6">
-          <div className="rounded-lg overflow-hidden shadow-lg flex-1">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!4v1757775126054!6m8!1m7!1sSN6gbrjGmWhoA4uk-4mMVA!2m2!1d62.37427422446464!2d6.586577241891676!3f115.62029880003583!4f5.851649908097372!5f0.618543023297123"
-              className="w-full h-64 sm:h-96"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-            <p className="text-center mt-2 font-bold">
-              Her er grusveien hvor man kjører frem til parkeringen, NB: Bomvei
-              70 kroner for å passere.
-            </p>
-          </div>
- develop
 
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
               <img
                 src="/veienvidere.gif"
                 alt="Parkering Blindheimsbakkene"
-                className=" w-full h-64 sm:h-96 object-cover"
+                className="w-full h-64 sm:h-96 object-cover"
               />
               <p className="text-center font-bold">
-                Etter å ha fulgt veien et godt stykke innover, vil man komme til
-                parkeringen som vist over🅿️
+                Etter å ha fulgt veien et godt stykke innover, vil man komme til parkeringen som vist over🅿️.
               </p>
             </div>
           </section>
 
           <p className="text-center mt-5">
-            Etter man har parkert, er det bare å følge gruseveien som vist på
-            bildet til høyre.
+            Etter man har parkert, er det bare å følge gruseveien som vist på bildet til høyre.
           </p>
+
           <p className="text-center mt-2">
-            Videre langs denne grusveien, vil man komme til noen hytter. Her er
-            det mulighet for å ta en snarvei.
+            Videre langs denne grusveien, vil man komme til noen hytter. Her er det mulighet for å ta en snarvei.
           </p>
 
           <section className="grid grid-cols-2 gap-6 mt-2">
@@ -253,9 +192,7 @@ export default function Rutevelger() {
                 alt="snarveien"
                 className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
               />
-              <p className="text-center mb-6 font-bold">
-                Opp her går snarveien.
-              </p>
+              <p className="text-center mb-6 font-bold">Opp her går snarveien.</p>
             </div>
 
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
@@ -265,10 +202,10 @@ export default function Rutevelger() {
                 className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
               />
               <p className="text-center font-bold">
-                Hvis ikke er det bare å følge veien videre, med god utsikt til
-                det endelige målet🚩.
+                Hvis ikke er det bare å følge veien videre, med god utsikt til det endelige målet🚩.
               </p>
             </div>
+
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
               <img
                 src="/oppmotbro.jpeg"
@@ -276,8 +213,7 @@ export default function Rutevelger() {
                 className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
               />
               <p className="text-center mt-2 font-bold">
-                Et lite stykke oppi her, vil råsene fra Vikedalen og
-                Blindheimsbakkene flettes sammen🔀.
+                Et lite stykke oppi her, vil råsene fra Vikedalen og Blindheimsbakkene flettes sammen🔀.
               </p>
             </div>
           </section>
@@ -285,6 +221,7 @@ export default function Rutevelger() {
           <p className="font-bold text-xl mt-6 flex justify-center">
             Her er turen fra Blindheimsbakkene
           </p>
+
           <div className="flex justify-center w-full mx-auto mt-2">
             <BlindheimMap />
           </div>
