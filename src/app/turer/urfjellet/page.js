@@ -7,6 +7,7 @@ import Rating from "@/components/Rating";
 import Værdata from "@/components/Værdata";
 import Image from "next/image";
 import UrfjelletMap from "@/components/UrrfjelletMap";
+import RuteInfo from "@/components/RuteInfo";
 
 export default function UrfjelletPage() {
   const [rating, setRating] = useState(0);
@@ -25,7 +26,16 @@ export default function UrfjelletPage() {
             className="rounded-full justify-center-safe set-h-[300px] "
           />
         </div>
-        <p>Urfjellet sett i fra Koppen</p>
+        <p>Urfjellet sett fra Koppen</p>
+        
+        <RuteInfo
+         rangering="RØD"
+         rangeringFarge="text-red-500"
+         hoydemeter={1267}
+         vertikalStigning={1255}
+         kilometer={9.75}
+         tidsbruk="4-6 timer"
+        />
         
         <h2 className="text-center text-xl font-extrabold">
             Her er ruten opp til Urfjellet.

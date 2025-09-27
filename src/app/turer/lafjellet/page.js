@@ -7,7 +7,7 @@ import Rating from "@/components/Rating";
 import Værdata from "@/components/Værdata";
 import Image from "next/image";
 import LafjelletMap from "@/components/LafjelletMap";
-import LafjelletInfo from "@/components/LafjelletInfo";
+import RuteInfo from "@/components/RuteInfo";
 
 export default function LafjelletPage() {
   const [rating, setRating] = useState(0);
@@ -31,7 +31,14 @@ export default function LafjelletPage() {
           <p className="mt-2">
             Baksiden av Lafjellet sett i fra parkeringen hvor man starter
             </p>
-             <LafjelletInfo />
+             <RuteInfo 
+             rangering="RØD"
+             rangeringFarge="text-red-500"
+             hoydemeter={1161}
+             vertikalStigning={856}
+             kilometer={6.62}
+             tidsbruk="2-3 timer"
+             />
              <section className="flex flex-col md:flex-row gap-6 mt-2">
               <div className="rounded-lg overflow-hidden shadow-lg flex-1">
             <p className="mt-4">
@@ -43,7 +50,7 @@ export default function LafjelletPage() {
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
+            referrerPolicy="no-referrer-when-downgrade">
            </iframe>
            </div>
            

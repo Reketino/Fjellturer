@@ -1,8 +1,15 @@
-"use client;";
+11-få-inn-kart-som-viser-ruten
+
 
 import { useState } from "react";
 import BlindheimMap from "@/components/BlindheimMap";
 import VikedalenMap from "@/components/VikedalenMap";
+
+
+"use client;"
+import RuteInfo from "./RuteInfo";
+import { useState } from "react"
+develop
 
 export default function Rutevelger() {
   const [valgt, setValgt] = useState([]);
@@ -47,10 +54,41 @@ export default function Rutevelger() {
       {valgt.includes("vikedalen") && (
         <section className="mt-10 max-w-4xl mx-auto px-4">
           <h2 className=" text-center text-xl font-bold">Fra Vikedalen</h2>
+           
+           <div className="flex items-center justify-center ">
+                     <RuteInfo
+                     rangering="RØD"
+                     rangeringFarge="text-red-500"
+                     hoydemeter={1007}
+                     vertikalStigning={968}
+                     kilometer={12.26}
+                     tidsbruk="3-5 timer"
+                    />
+                    </div>
+
           <p className=" text-center mt-2">
             Turen starter ved parkeringen til Høyseth, hvis man går opp fra
+11-få-inn-kart-som-viser-ruten
             Vikedalen.
           </p>
+
+            Vikedalen.</p>
+            
+                     
+          
+           <section className="flex flex-col md:flex-row gap-6 mt-2">
+          <div className="rounded-lg overflow-hidden shadow-lg flex-1">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!4v1757708371385!6m8!1m7!1sWyZDdLBkccbXpz3S_ejv-g!2m2!1d62.3752727172618!2d6.599139845354096!3f125.24832946725054!4f0.7656633566013937!5f1.484598564989514"
+              className="w-full h-64 sm:h-96"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+            <p className=" text-center font-semibold mt-2">Parkeringen i Vikedalen 🅿️.</p>
+          </div>
+ develop
 
           <section className="flex flex-col md:flex-row gap-6 mt-2">
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
@@ -128,13 +166,30 @@ export default function Rutevelger() {
 
       {valgt.includes("blindheimsbakkane") && (
         <section className="mt-10">
+ 11-få-inn-kart-som-viser-ruten
           <h2 className="text-center text-xl font-bold">
             Fra Blindheimsbakkane
           </h2>
+
+          <h2 className="text-center text-xl font-bold">Fra Blindheimsbakkane</h2>
+                     
+                     <div className="flex items-center justify-center ">
+                    <RuteInfo
+                     rangering="RØD"
+                     rangeringFarge="text-red-500"
+                     hoydemeter={1007}
+                     vertikalStigning={806}
+                     kilometer={7.65}
+                     tidsbruk="3-4 timer"
+                    />
+                    </div>
+
+ develop
           <p className="text-center mt-2">
             Man kan også gå opp fra andre siden av Vik elven på
             Blindheimsbakkane, dette er en god del kortere.
           </p>
+ 11-få-inn-kart-som-viser-ruten
           <section className="grid grid-cols-2 gap-6">
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
               <iframe
@@ -150,6 +205,24 @@ export default function Rutevelger() {
                 Bomvei 70 kroner for å passere.
               </p>
             </div>
+
+                   
+           <section className="grid grid-cols-2 gap-6">
+          <div className="rounded-lg overflow-hidden shadow-lg flex-1">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!4v1757775126054!6m8!1m7!1sSN6gbrjGmWhoA4uk-4mMVA!2m2!1d62.37427422446464!2d6.586577241891676!3f115.62029880003583!4f5.851649908097372!5f0.618543023297123"
+              className="w-full h-64 sm:h-96"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+            <p className="text-center mt-2 font-bold">
+              Her er grusveien hvor man kjører frem til parkeringen, NB: Bomvei
+              70 kroner for å passere.
+            </p>
+          </div>
+ develop
 
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
               <img
