@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import emojiMap from "@/utils/emojiMap"; 
 
 
-export default function Værdata({title,lat,lon,altitude}) {
+export default function Vaerdata({title,lat,lon,altitude}) {
   const [weather, setWeather] = useState(null);
 
   useEffect(() => {

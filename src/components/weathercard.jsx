@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import emojiMap from "@/utils/emojiMap";
 
 export default function WeatherCard({ name, lat, lon, altitude = 90}) {
