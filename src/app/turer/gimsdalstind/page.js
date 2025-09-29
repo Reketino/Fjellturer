@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Værdata from "@/components/Værdata";
 import Rating from "@/components/Rating";
-import Rutevelger from "@/components/Rutevelger";
+// import Rutevelger from "@/components/Rutevelger";
 import Image from "next/image";
 
 
@@ -33,7 +33,7 @@ export default function GimsdalstindPage() {
       </p>
 
       <h1 className="text-2xl mt-5 font-extrabold">Turbeskrivelse</h1>
-      <Rutevelger />
+      {/* <Rutevelger /> */}
 
       <div className="rounded-lg overflow-hidden shadow-lg flex-1 mt-4">
         <Image
