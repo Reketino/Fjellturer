@@ -97,7 +97,7 @@ export default function GimsdalstindPage() {
             className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
           />
           <p className="mt-2 font-bold text-center">
-            Etter den "seige" motbakken må man krysse denne uren her.
+            Etter den seige motbakken må man krysse denne uren her.
           </p>
         </div>
 
