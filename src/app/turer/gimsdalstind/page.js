@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import React from "react";
-import Link from "next/link";
 import Værdata from "@/components/Værdata";
 import Rating from "@/components/Rating";
 import Rutevelger from "@/components/Rutevelger";
