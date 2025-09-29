@@ -1,31 +1,36 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
+
 import { useState } from "react";
 import Rating from "@/components/Rating";
-import Værdata from "@/components/Værdata";
+import Vaerdata from "@/components/Vaerdata";
 import Image from "next/image";
-import LafjelletMap from "@/components/LafjelletMap";
+// import LafjelletMap from "@/components/LafjelletMap";
 import RuteInfo from "@/components/RuteInfo";
+import dynamic from "next/dynamic";
+
+const LafjelletMap = dynamic(() => import("@/components/LafjelletMap"), {
+  ssr: false,
+});
 
 export default function LafjelletPage() {
   const [rating, setRating] = useState(0);
 
   return (
-    <div className="text-center flex-center">
-      <main className="flex flex-col items-center flex-1 ">
+    <main className="flex flex-col items-center flex-1 ">
+        <div className="text-center flex-center">
         <h1 
         className="font-extrabold text-2xl mb-4 mt-4">
           Lafjellet
           </h1>
 
-        <div className="relative w-full h-[60vh]">
+        <div className="relative w-200 h-200">
           <Image
             src="/lafjellet.png"
             alt="Lafjellet"
-            fill
-            className="rounded-full object-cover"
+            width={1600}
+          height={900}
+            className="rounded-full object-cover w-full h-full"
           />
           </div>
           <p className="mt-2">
@@ -57,7 +62,7 @@ export default function LafjelletPage() {
           </section>
 
           <h2 className="text-center text-xl font-extrabold mb-2">
-            Her er hele  opp til Lafjellet.
+            Her er ruten til Lafjellet.
            </h2>
            <LafjelletMap />
               
@@ -66,13 +71,13 @@ export default function LafjelletPage() {
           <Rating max={5} value={rating} onChange={setRating} />
           <p className="mt-2"> du ga {rating} stjerner</p>
         </div>
-        <Værdata
+        <Vaerdata
           title="Lafjellet"
           lat={62.32777}
           lon={6.712563}
           altitude={1161}
         />
-      </main>
     </div>
+      </main>
   );
 }

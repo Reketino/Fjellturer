@@ -1,11 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import Værdata from "@/components/Værdata";
+// import Vaerdata from "@/components/Vaerdata";
 import Rating from "@/components/Rating";
-// import Rutevelger from "@/components/Rutevelger";
+import Rutevelger from "@/components/Rutevelger";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
+const Vaerdata = dynamic(() => import("@/components/Vaerdata"), {
+  ssr: false,
+});
 
 export default function GimsdalstindPage() {
   const [rating, setRating] = useState(0);
@@ -17,8 +21,8 @@ export default function GimsdalstindPage() {
         <Image
           src="/gimsdalstinden.jpg"
           alt="Gimsdalstinden"
-          width={800}
-          height={400}
+          width={1600}
+          height={900}
           className="rounded-full object-cover w-full h-full"
         />
         <p className="font-light mt-2 text-center">
@@ -75,7 +79,7 @@ export default function GimsdalstindPage() {
       <section className="grid grid-cols-2 gap-6 mt-2">
         <div className="flex-1 rounded-lg overflow-hidden shadow-lg">
           <Image
-            src="/ut av skogen.jpeg"
+            src="/ut-av-skogen.jpeg"
             alt="Råsen etter skogspartiet"
             width={800}
             height={400}
@@ -88,7 +92,7 @@ export default function GimsdalstindPage() {
 
         <div className="flex-2 rounded-lg overflow-hidden shadow-lg">
           <Image
-            src="/startpåur.jpeg"
+            src="/startpaaur.jpeg"
             alt="Her starter uren"
             width={800}
             height={400}
@@ -160,7 +164,7 @@ export default function GimsdalstindPage() {
 
         <div className="rounded-lg overflow-hidden shadow-lg">
           <Image
-            src="/følgdenne.gif"
+            src="/folgdenne.gif"
             alt="Følge denne eggen"
             width={800}
             height={400}
@@ -267,7 +271,7 @@ export default function GimsdalstindPage() {
         <p className="text-center mt-2"> du ga {rating} stjerner</p>
       </div>
 
-      <Værdata title="Gimsdalstind" lat={62.3416} lon={6.655} altitude={1007} />
+      <Vaerdata title="Gimsdalstind" lat={62.3416} lon={6.655} altitude={1007} />
     </div>
   );
 }
