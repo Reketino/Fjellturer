@@ -25,19 +25,19 @@ export default function GimsdalstindPage() {
           height={900}
           className="rounded-full object-cover w-full h-full"
         />
-        <p className="font-light mt-2 text-center">
+        <p className="text-center font-serif italic mb-4 mt-2">
           Gimsdalstinden sett i fra Gimsdalssætra
         </p>
       </div>
 
-      <p className="mt-4">
+      <p className="text-center font-serif italic mb-4 mt-6">
         Gimsdaldstind er med sine 1007 høydemeter over havet, en av de mange
         flotte turene man kan ta i Sykkylven. Turen byr på en magisk utover
         Sykkylven, Hammarsettindene & Straumshornet.
       </p>
 
       <h1 className="text-2xl mt-5 font-extrabold">Turbeskrivelse</h1>
-      {/* <Rutevelger /> */}
+      <Rutevelger />
 
       <div className="rounded-lg overflow-hidden shadow-lg flex-1 mt-4">
         <Image

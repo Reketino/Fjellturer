@@ -1,6 +1,5 @@
 "use client";
 
-
 import { useState } from "react";
 import Rating from "@/components/Rating";
 import Vaerdata from "@/components/Vaerdata";
@@ -18,8 +17,8 @@ export default function UrfjelletPage() {
 
   return (
     <main className="flex flex-col items-center flex-1 p-8 pb-20 gap-8 sm:p-20">
-        <div className="text-center flex-center">
-        <h1>Urfjellet</h1>
+      <div className="text-center flex-center">
+        <h1 className="text-4xl font-bold mb-4">Urfjellet</h1>
 
         <div className="relative">
           <Image
@@ -30,25 +29,29 @@ export default function UrfjelletPage() {
             className="rounded-full justify-center-safe set-h-[300px] "
           />
         </div>
-        <p>Urfjellet sett fra Koppen</p>
-        
+        <p className="font-serif italic mb-4 mt-6">Urfjellet sett fra Koppen</p>
+
         <RuteInfo
-         rangering="RØD"
-         rangeringFarge="text-red-500"
-         hoydemeter={1267}
-         vertikalStigning={1255}
-         kilometer={9.75}
-         tidsbruk="4-6 timer"
+          rangering="RØD"
+          rangeringFarge="text-red-500"
+          hoydemeter={1267}
+          vertikalStigning={1255}
+          kilometer={9.75}
+          tidsbruk="4-6 timer"
         />
-        
+
         <h2 className="text-center text-xl font-extrabold">
-            Her er ruten opp til Urfjellet.
-           </h2>
+          Her er ruten opp til Urfjellet.
+        </h2>
+          <div className="items-center flex justify-center w-full">
         <UrfjelletMap />
+        </div>
 
         <div className="p-8">
           <p>Hvor godt likte du forklaringen?</p>
-          <Rating max={5} value={rating} onChange={setRating} />
+          <div className="flex justify-center">
+            <Rating max={5} value={rating} onChange={setRating} />
+          </div>
           <p className="mt-2"> du ga {rating} stjerner</p>
         </div>
         <Vaerdata
@@ -57,7 +60,7 @@ export default function UrfjelletPage() {
           lon={6.682832}
           altitude={1267}
         />
-    </div>
-      </main>
+      </div>
+    </main>
   );
 }
