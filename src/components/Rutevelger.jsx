@@ -106,6 +106,7 @@ export default function Rutevelger() {
                 src="/ned til raas.gif"
                 alt="Råsen til broen"
                 className="rounded-lg shadow-md w-full h-96 object-contain"
+                unoptimized
               />
               <p className="mt-2 text-center font-bold">
                 Her er råsen som fører ned til broen.
@@ -117,6 +118,7 @@ export default function Rutevelger() {
                 src="/ned til bro.gif"
                 alt="Broen"
                 className="rounded-lg shadow-md w-full h-96 object-contain"
+                unoptimized
               />
               <p className="mt-2 text-center font-bold">
                 Her kommer man ned til broen.
@@ -173,6 +175,7 @@ export default function Rutevelger() {
                 src="/veienvidere.gif"
                 alt="Parkering Blindheimsbakkene"
                 className="w-full h-64 sm:h-96 object-cover"
+                unoptimized
               />
               <p className="text-center font-bold">
                 Etter å ha fulgt veien et godt stykke innover, vil man komme til parkeringen som vist over🅿️.
