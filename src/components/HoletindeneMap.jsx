@@ -38,7 +38,7 @@ export default function HoletindeneMap() {
     <MapContainer
       center={[62.32699, 6.71989]}
       zoom={13}
-      style={{ height: "50vh", width: "50%" }} 
+      style={{ height: "50vh", width: "100%" }}
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
