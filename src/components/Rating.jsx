@@ -18,13 +18,11 @@ export default function Rating({ max = 5, value, onChange }) {
             type="button"
             className={`text-3xl ${
               starValue <= (hover || rating)
-                ? "text-yellow-400"
-                : "text-gray-300"
-            } transition-colors`}
+                ? "text-yellow-400 opacity-100"
+                : "text-yellow-400 opacity-30"
+            } transition-opacity`}
             onClick={() => setRating(starValue)}
-            onMouseEnter={() => setHover(starValue)}
-            onMouseLeave={() => setHover(0)}
-          >
+            >
             ⭐
           </button>
         );
