@@ -19,7 +19,7 @@ export default function GimsdalstindPage() {
       <h1 className=" font-extrabold text-4xl p-8">Gimsdalstinden</h1>
       <div className="relative w-200 h-200">
         <Image
-          src="/gimsdalstinden.jpg"
+          src="/Gimsdalstinden.jpg"
           alt="Gimsdalstinden"
           width={1600}
           height={900}
