@@ -18,6 +18,17 @@ export default function HoletindenePage() {
     <main className="flex flex-col items-center gap-4 p-6 sm:p-20">
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-4">Holetindene</h1>
+
+
+          <RuteInfo
+          rangering="RØD"
+          rangeringFarge="text-red-500"
+          hoydemeter={1242}
+          vertikalStigning={1160}
+          kilometer={10.68}
+          tidsbruk="3-5 timer"
+        />
+
         <p className="font-serif italic mb-4 mt-6">
           Holetindene finner du i vakre Velledalen, som er en 10 minutters
           kjøretur fra sentrum av Sykkylven.
@@ -53,14 +64,7 @@ export default function HoletindenePage() {
           </div>
         </section>
 
-        <RuteInfo
-          rangering="RØD"
-          rangeringFarge="text-red-500"
-          hoydemeter={1242}
-          vertikalStigning={1160}
-          kilometer={10.68}
-          tidsbruk="3-5 timer"
-        />
+        
 
         <h2 className="text-center text-xl font-extrabold">
           Her er ruten opp til Holetindene.

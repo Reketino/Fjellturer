@@ -46,6 +46,7 @@ export default function GimsdalstindPage() {
           width={800}
           height={400}
           className="rounded-lg shadow-md w-full h-screen object-contain"
+          unoptimized
         />
         <p className="text-center mt-2 font-bold">
           Her er plassen hvor hvor råsene møtest.
