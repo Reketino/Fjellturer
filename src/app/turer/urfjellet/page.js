@@ -32,9 +32,11 @@ export default function UrfjelletPage() {
         </div>
         <p className="font-serif italic mb-4 mt-2">Urfjellet sett fra Koppen</p>
         
-        <p className="text-center font-serif italic mb-4 mt-4">
+        <p className="text-center font-serif italic mb-2 mt-4">
         Urfjellet på 1267, er enda en av de mange flotte & lengre turene fra Velledalen.
-        På toppen vil man få en fantastisk utsikt over Hammarsettindene, Langeneset og ned mot Sykkylven!.
+      </p>
+      <p className="text-center font-serif italic mb-4 mt-2">
+         På toppen vil man få en fantastisk utsikt over Hammarsettindene, Langeneset og ned mot Sykkylven!.
       </p>
 
         <RuteInfo
@@ -45,13 +47,49 @@ export default function UrfjelletPage() {
           kilometer={9.75}
           tidsbruk="4-6 timer"
         />
+        <p className="text-center mt-4">
+          Turen starter fra parkeringen, som man ser ligger opp her.
+        </p>
 
+           
+            <div className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center">
+       <iframe 
+       src="https://www.google.com/maps/embed?pb=!4v1759416354794!6m8!1m7!1sVB8tHFsEs5ySb0u_Z5tLfA!2m2!1d62.29194116728266!2d6.657225408158998!3f57.65601464103331!4f7.634504413804564!5f2.347694816175464" 
+       className="w-[600px] h-64 sm:h-96"
+       style={{ border: 0 }}
+       allowFullScreen 
+       loading="lazy" 
+       referrerPolicy="no-referrer-when-downgrade"
+       />
+       <p className="text-center font-semibold mt-2">Parkeringen🅿️.</p>
+       </div>
+        
+        <p className="text-center mt-4">
+          Etter man har parkert går turen først til Koppen, som du finner beskrivelse på her⬇️.
+        </p>
 
-        <div className="mt-6 flex flex-col items-center mb-4">
+        <div className="mt-4 flex flex-col items-center mb-4">
           <h2 className="font-semibold text-center">
             Her er ruten til Koppen:
           </h2>
           <Koppen />
+        </div>
+        
+        <div className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center">
+          <p className="text-center  mt-2 mb-2">
+            Etter man har komt på Koppen, følger man god sti videre mot Svadfjellet.
+          </p>
+          <Image
+            src="/Svadfjellet.gif"
+            alt="Svadfjellet sett fra Koppen"
+            width={600}
+            height={400}
+            className="rounded-lg object-cover"
+            unoptimized
+          />
+          <p className="text-center font-semibold  mb-2">
+            Her ser man Svadfjellet fra Koppen.
+          </p>
         </div>
 
         <h2 className="text-center text-xl font-extrabold">
