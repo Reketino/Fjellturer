@@ -31,13 +31,15 @@ export default function UrfjelletPage() {
           />
         </div>
         <p className="font-serif italic mb-4 mt-2">Urfjellet sett fra Koppen</p>
-        
+
         <p className="text-center font-serif italic mb-2 mt-4">
-        Urfjellet på 1267, er enda en av de mange flotte & lengre turene fra Velledalen.
-      </p>
-      <p className="text-center font-serif italic mb-4 mt-2">
-         På toppen vil man få en fantastisk utsikt over Hammarsettindene, Langeneset og ned mot Sykkylven!.
-      </p>
+          Urfjellet på 1267, er enda en av de mange flotte & lengre turene fra
+          Velledalen.
+        </p>
+        <p className="text-center font-serif italic mb-4 mt-2">
+          På toppen vil man få en fantastisk utsikt over Hammarsettindene,
+          Langeneset, ned mot Sykkylven & utover mot Ålesund.
+        </p>
 
         <RuteInfo
           rangering="RØD"
@@ -51,21 +53,21 @@ export default function UrfjelletPage() {
           Turen starter fra parkeringen, som man ser ligger opp her.
         </p>
 
-           
-            <div className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center">
-       <iframe 
-       src="https://www.google.com/maps/embed?pb=!4v1759416354794!6m8!1m7!1sVB8tHFsEs5ySb0u_Z5tLfA!2m2!1d62.29194116728266!2d6.657225408158998!3f57.65601464103331!4f7.634504413804564!5f2.347694816175464" 
-       className="w-[600px] h-64 sm:h-96"
-       style={{ border: 0 }}
-       allowFullScreen 
-       loading="lazy" 
-       referrerPolicy="no-referrer-when-downgrade"
-       />
-       <p className="text-center font-semibold mt-2">Parkeringen🅿️.</p>
-       </div>
-        
+        <div className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1759416354794!6m8!1m7!1sVB8tHFsEs5ySb0u_Z5tLfA!2m2!1d62.29194116728266!2d6.657225408158998!3f57.65601464103331!4f7.634504413804564!5f2.347694816175464"
+            className="w-[600px] h-64 sm:h-96"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+          <p className="text-center font-semibold mt-2">Parkeringen🅿️.</p>
+        </div>
+
         <p className="text-center mt-4">
-          Etter man har parkert går turen først til Koppen, som du finner beskrivelse på her⬇️.
+          Etter man har parkert går turen først til Koppen, som du finner
+          beskrivelse på her⬇️.
         </p>
 
         <div className="mt-4 flex flex-col items-center mb-4">
@@ -74,10 +76,11 @@ export default function UrfjelletPage() {
           </h2>
           <Koppen />
         </div>
-        
+
         <div className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center">
           <p className="text-center  mt-2 mb-2">
-            Etter man har komt på Koppen, følger man god sti videre mot Svadfjellet.
+            Etter man har komt på Koppen, følger man god sti videre mot
+            Svadfjellet.
           </p>
           <Image
             src="/Svadfjellet.gif"
@@ -92,12 +95,77 @@ export default function UrfjelletPage() {
           </p>
         </div>
 
-        <h2 className="text-center text-xl font-extrabold">
+        <div className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center">
+          <p className="text-center  mt-2 mb-2">
+            Når man har kommet på Svadfjellet, gjenstår den siste tyngste biten
+            opp til Urfjellet.
+          </p>
+          <p className="text-center  mb-2">
+            Som man ser på bildet under her⬇️.
+          </p>
+          <div className="flex flex-col items-center">
+          <Image
+            src="/Urfjelletiltopp.gif"
+            alt="Urfjellet sett fra Svadfjellet"
+            width={400}
+            height={400}
+            className="rounded-lg object-cover"
+            unoptimized
+          />
+          <p className="font-serif italictext-center mb-2">
+            NB: Stien er mot slutten merket med varder, men masse ur!.
+          </p>
+          </div>
+          <div className="flex flex-col items-center">
+          <p className="text-center font-semibold mt-4 mb-2">
+            Legger ved en film som viser siste biten opp mot Urfjellet🎬.
+          </p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/xnDaPwVOx-Y?si=6jUVaxlg1KNVaOtD"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="mb-4"
+          >   
+          </iframe>
+          </div>
+          </div>
+
+        <h2 className=" text-4xl font-bold text-center mt-4 mb-2">Toppen!🏔️</h2>
+
+        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 items-center mb-2">
+          <Image
+            src="/Urfjelltopp.jpg"
+            alt="Utsikt fra Toppen av Urfjellet"
+            width={600}
+            height={400}
+            className="rounded-lg object-cover w-full h-64"
+          />
+          <Image
+            src="/urfjellet topp 2.jpg"
+            alt="Utsikt fra Toppen av Urfjellet"
+            width={600}
+            height={400}
+            className="rounded-lg object-cover w-full h-64"
+          />
+        </div>
+        <p className="text-center font-semibold mt-2">
+          En majestetisk utsikt over Hammarsettindene, ut mot Sykkylven & videre
+          ut mot Ålesund👑.
+        </p>
+
+        <h2 className="text-center text-xl font-extrabold mt-4 mb-2">
           Her er ruten opp til Urfjellet.
         </h2>
         <div className="items-center flex justify-center w-full">
           <UrfjelletMap />
         </div>
+
+        <h2 className="text-center text-4xl font-bold mt-4 mb-4">God Tur!🚶‍♂️</h2>
 
         <div className="p-8">
           <p>Hvor godt likte du forklaringen?</p>
