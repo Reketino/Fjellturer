@@ -22,7 +22,7 @@ export default function LafjelletPage() {
 
         <div className="relative w-200 h-200">
           <Image
-            src="/lafjellet.png"
+            src="/Lafjellet.png"
             alt="Lafjellet"
             width={1600}
             height={900}

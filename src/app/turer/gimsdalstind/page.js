@@ -111,6 +111,7 @@ export default function GimsdalstindPage() {
             width={800}
             height={400}
             className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
+            unoptimized
           />
           <p className="mt-2 font-bold text-center">
             Etter den første uren vil man komme hit. God utsikt her også!.
@@ -124,6 +125,7 @@ export default function GimsdalstindPage() {
             width={800}
             height={400}
             className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
+            unoptimized
           />
           <p className="mt-2 font-bold text-center">
             Et lite stykke lenger oppe vil man komme til denne eggen her.
@@ -144,6 +146,7 @@ export default function GimsdalstindPage() {
             width={800}
             height={400}
             className="w-full h-64 sm:h-96 object-contain shadow-md rounded-lg"
+            unoptimized
           />
           <p className="mt-2 font-bold text-center">
             Her begynner man oppover, med enkel klyving.
@@ -170,6 +173,7 @@ export default function GimsdalstindPage() {
             width={800}
             height={400}
             className="w-full h-64 sm:h-96 object-contain shadow-md rounded-lg"
+            unoptimized
           />
           <p className="mt-2 font-bold text-center">
             Videre følger man denne eggen oppover.
@@ -183,6 +187,7 @@ export default function GimsdalstindPage() {
             width={800}
             height={400}
             className="w-full h-64 sm:h-96 object-contain shadow-md rounded-lg"
+            unoptimized
           />
           <div className="px-2 text-center">
             <p className="mt-2 font-bold text-sm sm:text-base leading-relaxed max-w-xs mx-auto">
@@ -200,6 +205,7 @@ export default function GimsdalstindPage() {
           width={800}
           height={400}
           className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
+          unoptimized
         />
         <p className="mt-2 font-bold text-center text-sm sm:text-base leading-relaxed">
           Her ser man hvor man kommer igjen, om man går eggen eller råsen.
