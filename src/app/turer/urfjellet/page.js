@@ -62,7 +62,7 @@ export default function UrfjelletPage() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
-          <p className="text-center font-semibold mt-2">Parkeringen🅿️.</p>
+          <p className="font-serif italic text-center font-semibold mt-2">Parkeringen🅿️.</p>
         </div>
 
         <p className="text-center mt-4">
@@ -90,50 +90,55 @@ export default function UrfjelletPage() {
             className="rounded-lg object-cover"
             unoptimized
           />
-          <p className="text-center font-semibold  mb-2">
+          <p className="font-serif italic text-center font-semibold mb-2">
             Her ser man Svadfjellet fra Koppen.
           </p>
         </div>
 
-        <div className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center">
-          <p className="text-center  mt-2 mb-2">
+           <p className="text-center  mt-2 mb-2">
             Når man har kommet på Svadfjellet, gjenstår den siste tyngste biten
             opp til Urfjellet.
           </p>
-          <p className="text-center  mb-2">
-            Som man ser på bildet under her⬇️.
-          </p>
-          <div className="flex flex-col items-center">
-          <Image
-            src="/Urfjelletiltopp.gif"
-            alt="Urfjellet sett fra Svadfjellet"
-            width={400}
-            height={400}
-            className="rounded-lg object-cover"
-            unoptimized
-          />
-          <p className="font-serif italictext-center mb-2">
-            NB: Stien er mot slutten merket med varder, men masse ur!.
-          </p>
-          </div>
-          <div className="flex flex-col items-center">
-          <p className="text-center font-semibold mt-4 mb-2">
-            Legger ved en film som viser siste biten opp mot Urfjellet🎬.
-          </p>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/xnDaPwVOx-Y?si=6jUVaxlg1KNVaOtD"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-            className="mb-4"
-          >   
-          </iframe>
-          </div>
-          </div>
+
+        <section className="rounded-lg overflow-hidden shadow-lg p-6 bg-black">
+  <p className="text-center mb-6">
+    Som man ser på bildet og videoen under ⬇️
+  </p>
+
+  <div className="flex flex-col md:flex-row gap-6 items-stretch">
+    
+    <div className="flex-1 flex flex-col items-center justify-between bg-gray-950 p-4 rounded-lg shadow">
+      <Image
+        src="/Urfjelletiltopp.gif"
+        alt="Urfjellet sett fra Svadfjellet"
+        width={500}
+        height={400}
+        className="rounded-lg object-cover w-full h-64 md:h-full"
+        unoptimized
+      />
+      <p className="font-serif italic text-center mt-2 mb-2">
+        ⚠️ Stien er mot slutten merket med varder, men masse ur!.
+      </p>
+    </div>
+
+    
+    <div className="flex-1 flex flex-col items-center justify-between bg-gray-950 p-4 rounded-lg shadow">
+      <iframe
+        className="w-full h-64 md:h-full rounded-lg shadow-lg"
+        src="https://www.youtube.com/embed/xnDaPwVOx-Y?si=6jUVaxlg1KNVaOtD"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      />
+      <p className="font-serif italic text-center font-semibold mt-2 ">
+        🎬 God film som viser ruten 
+      </p>
+    </div>
+  </div>
+</section>
+        
 
         <h2 className=" text-4xl font-bold text-center mt-4 mb-2">Toppen!🏔️</h2>
 
@@ -143,17 +148,17 @@ export default function UrfjelletPage() {
             alt="Utsikt fra Toppen av Urfjellet"
             width={600}
             height={400}
-            className="rounded-lg object-cover w-full h-64"
+            className="rounded-lg object-cover w-full h-96"
           />
           <Image
             src="/urfjellet topp 2.jpg"
             alt="Utsikt fra Toppen av Urfjellet"
             width={600}
             height={400}
-            className="rounded-lg object-cover w-full h-64"
+            className="rounded-lg object-cover w-full h-96"
           />
         </div>
-        <p className="text-center font-semibold mt-2">
+        <p className="font-serif italic text-center font-semibold mt-2">
           En majestetisk utsikt over Hammarsettindene, ut mot Sykkylven & videre
           ut mot Ålesund👑.
         </p>
