@@ -62,7 +62,9 @@ export default function UrfjelletPage() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
-          <p className="font-serif italic text-center font-semibold mt-2">Parkeringen🅿️.</p>
+          <p className="font-serif italic text-center font-semibold mt-2">
+            Parkeringen🅿️.
+          </p>
         </div>
 
         <p className="text-center mt-4">
@@ -95,50 +97,47 @@ export default function UrfjelletPage() {
           </p>
         </div>
 
-           <p className="text-center  mt-2 mb-2">
-            Når man har kommet på Svadfjellet, gjenstår den siste tyngste biten
-            opp til Urfjellet.
-          </p>
+        <p className="text-center  mt-2 mb-2">
+          Når man har kommet på Svadfjellet, gjenstår den siste tyngste biten
+          opp til Urfjellet.
+        </p>
 
         <section className="rounded-lg overflow-hidden shadow-lg p-6 bg-black">
-  <p className="text-center mb-6">
-    Som man ser på bildet og videoen under ⬇️
-  </p>
+          <p className="text-center mb-6">
+            Som man ser på bildet og videoen under ⬇️
+          </p>
 
-  <div className="flex flex-col md:flex-row gap-6 items-stretch">
-    
-    <div className="flex-1 flex flex-col items-center justify-between bg-gray-950 p-4 rounded-lg shadow">
-      <Image
-        src="/Urfjelletiltopp.gif"
-        alt="Urfjellet sett fra Svadfjellet"
-        width={500}
-        height={400}
-        className="rounded-lg object-cover w-full h-64 md:h-full"
-        unoptimized
-      />
-      <p className="font-serif italic text-center mt-2 mb-2">
-        ⚠️ Stien er mot slutten merket med varder, men masse ur!.
-      </p>
-    </div>
+          <div className="flex flex-col md:flex-row gap-6 items-stretch">
+            <div className="flex-1 flex flex-col items-center justify-between bg-gray-950 p-4 rounded-lg shadow">
+              <Image
+                src="/Urfjelletiltopp.gif"
+                alt="Urfjellet sett fra Svadfjellet"
+                width={500}
+                height={400}
+                className="rounded-lg object-cover w-full h-64 md:h-full"
+                unoptimized
+              />
+              <p className="font-serif italic text-center mt-2 mb-2">
+                ⚠️ Stien er mot slutten merket med varder, men masse ur!.
+              </p>
+            </div>
 
-    
-    <div className="flex-1 flex flex-col items-center justify-between bg-gray-950 p-4 rounded-lg shadow">
-      <iframe
-        className="w-full h-64 md:h-full rounded-lg shadow-lg"
-        src="https://www.youtube.com/embed/xnDaPwVOx-Y?si=6jUVaxlg1KNVaOtD"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-      />
-      <p className="font-serif italic text-center font-semibold mt-2 ">
-        🎬 God film som viser ruten 
-      </p>
-    </div>
-  </div>
-</section>
-        
+            <div className="flex-1 flex flex-col items-center justify-between bg-gray-950 p-4 rounded-lg shadow">
+              <iframe
+                className="w-full h-64 md:h-full rounded-lg shadow-lg"
+                src="https://www.youtube.com/embed/xnDaPwVOx-Y?si=6jUVaxlg1KNVaOtD"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+              <p className="font-serif italic text-center font-semibold mt-2 ">
+                🎬 God film som viser ruten
+              </p>
+            </div>
+          </div>
+        </section>
 
         <h2 className=" text-4xl font-bold text-center mt-4 mb-2">Toppen!🏔️</h2>
 
