@@ -6,7 +6,7 @@ import Vaerdata from "@/components/Vaerdata";
 // import HoletindeneMap from "@/components/HoletindeneMap";
 import RuteInfo from "@/components/RuteInfo";
 import dynamic from "next/dynamic";
-import Bsaetra from "@/components/Bsaetra";
+// import Bsaetra from "@/components/Bsaetra";
 // import Bkollen from "@/components/Bkollen";
 import Image from "next/image";
 
