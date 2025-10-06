@@ -10,8 +10,8 @@ export default function LinkPreview() {
     >
       <div className="relative w-full h-48">
         <Image
-          src="/Koppen.jpg"
-          alt="Koppen i Velledalen"
+          src="/Koln.jpg"
+          alt="Brunstadkollen"
           fill
           className="object-cover"
         />
