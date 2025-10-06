@@ -7,7 +7,7 @@ import Vaerdata from "@/components/Vaerdata";
 import RuteInfo from "@/components/RuteInfo";
 import dynamic from "next/dynamic";
 import Bsaetra from "@/components/Bsaetra";
-import Koln from "@/components/Koln";
+import Bkollen from "@/components/Bkollen";
 import Image from "next/image";
 
 const HoletindeneMap = dynamic(() => import("@/components/HoletindeneMap"), {
@@ -96,7 +96,7 @@ export default function HoletindenePage() {
                   <h2 className="font-semibold text-center">
                     Ruten til Brunstadkollen:
                   </h2>
-                  <Koln />
+                  <Bkollen />
                 </div>
         
 
