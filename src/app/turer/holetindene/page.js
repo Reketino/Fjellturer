@@ -85,7 +85,7 @@ export default function HoletindenePage() {
                   <h2 className="font-semibold text-center">
                     Ruten til Brunstadsætra:
                   </h2>
-                  <Bsaetra />
+                  {/* <Bsaetra /> */}
                 </div>
 
         <p className="font-serif italic my-4">
@@ -96,7 +96,7 @@ export default function HoletindenePage() {
                   <h2 className="font-semibold text-center">
                     Ruten til Brunstadkollen:
                   </h2>
-                  <Bkollen />
+                  {/* <Bkollen /> */}
                 </div>
         
 
