@@ -6,8 +6,8 @@ import Vaerdata from "@/components/Vaerdata";
 // import HoletindeneMap from "@/components/HoletindeneMap";
 import RuteInfo from "@/components/RuteInfo";
 import dynamic from "next/dynamic";
-// import Bsaetra from "@/components/Bsaetra";
-// import Bkollen from "@/components/Bkollen";
+import Bsaetra from "@/components/Bsaetra";
+import Bkollen from "@/components/Bkollen";
 import Image from "next/image";
 
 const HoletindeneMap = dynamic(() => import("@/components/HoletindeneMap"), {
@@ -78,17 +78,17 @@ export default function HoletindenePage() {
           </div>
         </section>
       
-        <p className="font-serif italic my-4">
+        <p className="font-serif italic">
           Etter man har fått parkert går turen til Brunstadsætra, som du kan finner beskrivelse på her⬇️.
         </p>
          <div className="mt-4 flex flex-col items-center mb-4">
                   <h2 className="font-semibold text-center">
                     Ruten til Brunstadsætra:
                   </h2>
-                  {/* <Bsaetra /> */}
+                  <Bsaetra />
                 </div>
 
-        <p className="font-serif italic my-4">
+        <p className="font-serif italic">
           Etter en liten pust i bakken på Brunstadsætra, går turen videre til
           Brunstadkollen, som du kan finne beskrivelse på her⬇️.
         </p>
@@ -96,7 +96,7 @@ export default function HoletindenePage() {
                   <h2 className="font-semibold text-center">
                     Ruten til Brunstadkollen:
                   </h2>
-                  {/* <Bkollen /> */}
+                  <Bkollen />
                 </div>
         
 

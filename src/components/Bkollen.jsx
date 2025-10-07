@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Bkollen() {
+export default function LinkPreview() {
   return (
     <a
       href="https://ut.no/turforslag/118689"
