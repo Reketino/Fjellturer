@@ -1,11 +1,18 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import Rating from "@/components/Rating";
 import Vaerdata from "@/components/Vaerdata";
 // import HoletindeneMap from "@/components/HoletindeneMap";
 import RuteInfo from "@/components/RuteInfo";
 import dynamic from "next/dynamic";
+import Brunstadkollen from "@/components/Brunstadkollen";
+import Brunstadsaetra from "@/components/Brunstadsaeter";
+
+const Bkollen = Brunstadkollen;
+const Bsaetra = Brunstadsaetra;
+
 
 const HoletindeneMap = dynamic(() => import("@/components/HoletindeneMap"), {
   ssr: false,
@@ -18,6 +25,16 @@ export default function HoletindenePage() {
     <main className="flex flex-col items-center gap-4 p-6 sm:p-20">
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-4">Holetindene</h1>
+       
+               <div className="relative flex justify-center w-full h-72 md:h-96 rounded-full overflow-hidden">
+                 <Image
+                   src="/Holetindene.jpg"
+                   alt="Holetindene"
+                   fill
+                   className=" object-cover"
+                 />
+               </div>
+               <p className="font-serif italic mb-4 mt-2">Holetindene & Ystevasshornet sett fra Brunstadkollen</p>
 
 
           <RuteInfo
@@ -29,7 +46,7 @@ export default function HoletindenePage() {
           tidsbruk="3-5 timer"
         />
 
-        <p className="font-serif italic mb-4 mt-6">
+        <p className="font-serif italic mb-2 mt-6">
           Holetindene finner du i vakre Velledalen, som er en 10 minutters
           kjøretur fra sentrum av Sykkylven.
         </p>
@@ -63,6 +80,29 @@ export default function HoletindenePage() {
             </p>
           </div>
         </section>
+      
+        <p className="font-serif italic">
+          Etter man har fått parkert går turen til Brunstadsætra, som du kan finner beskrivelse på her⬇️.
+        </p>
+         <div className="mt-4 flex flex-col items-center mb-4">
+                  <h2 className="font-semibold text-center">
+                    Ruten til Brunstadsætra:
+                  </h2>
+                  <Brunstadsaetra />
+                </div>
+
+        <p className="font-serif italic">
+          Etter en liten pust i bakken på Brunstadsætra, går turen videre til
+          Brunstadkollen, som du kan finne beskrivelse på her⬇️.
+        </p>
+         <div className="mt-4 flex flex-col items-center mb-4">
+                  <h2 className="font-semibold text-center">
+                    Ruten til Brunstadkollen:
+                  </h2>
+                  <Brunstadkollen />
+                </div>
+        
+
 
         
 

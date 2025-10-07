@@ -8,6 +8,7 @@ export default function Home() {
     <main className="flex flex-col items-center flex-1 p-4 pb-20 gap-6 sm:p-20">
         <div className="font-sans flex flex-col min-h-screen">
         <h1 className="mb-4 font-extrabold text-center text-4xl">Sykkylven Fjell og Turer</h1>
+        
         <div className="w-full relative rounded-3xl overflow-hidden">
         <Image 
         src="/sykkylvenilufta.jpg" 
