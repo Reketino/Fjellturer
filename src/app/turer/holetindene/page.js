@@ -1,14 +1,18 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import Rating from "@/components/Rating";
 import Vaerdata from "@/components/Vaerdata";
 // import HoletindeneMap from "@/components/HoletindeneMap";
 import RuteInfo from "@/components/RuteInfo";
 import dynamic from "next/dynamic";
-import Bsaetra from "@/components/bsaetra";
-import Bkollen from "@/components/bkollen";
-import Image from "next/image";
+import Brunstadkollen from "@/components/Brunstadkollen";
+import Brunstadsaetra from "@/components/Brunstadsaeter";
+
+const Bkollen = Brunstadkollen;
+const Bsaetra = Brunstadsaetra;
+
 
 const HoletindeneMap = dynamic(() => import("@/components/HoletindeneMap"), {
   ssr: false,
@@ -22,13 +26,12 @@ export default function HoletindenePage() {
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-4">Holetindene</h1>
        
-               <div className="relative flex justify-center">
+               <div className="relative flex justify-center w-full h-72 md:h-96 rounded-full overflow-hidden">
                  <Image
                    src="/Holetindene.jpg"
                    alt="Holetindene"
-                   width={800}
-                   height={400}
-                   className="rounded-full set-h-[300px] set-w-[300px] object-cover"
+                   fill
+                   className=" object-cover"
                  />
                </div>
                <p className="font-serif italic mb-4 mt-2">Holetindene & Ystevasshornet sett fra Brunstadkollen</p>
@@ -85,7 +88,7 @@ export default function HoletindenePage() {
                   <h2 className="font-semibold text-center">
                     Ruten til Brunstadsætra:
                   </h2>
-                  <Bsaetra />
+                  <Brunstadsaetra />
                 </div>
 
         <p className="font-serif italic">
@@ -96,7 +99,7 @@ export default function HoletindenePage() {
                   <h2 className="font-semibold text-center">
                     Ruten til Brunstadkollen:
                   </h2>
-                  <Bkollen />
+                  <Brunstadkollen />
                 </div>
         
 
