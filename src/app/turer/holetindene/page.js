@@ -6,8 +6,8 @@ import Vaerdata from "@/components/Vaerdata";
 // import HoletindeneMap from "@/components/HoletindeneMap";
 import RuteInfo from "@/components/RuteInfo";
 import dynamic from "next/dynamic";
-import Bsaetra from "@/components/Bsaetra";
-import Bkollen from "@/components/Bkollen";
+import Bsaetra from "@/components/bsaetra";
+import Bkollen from "@/components/bkollen";
 import Image from "next/image";
 
 const HoletindeneMap = dynamic(() => import("@/components/HoletindeneMap"), {
