@@ -20,7 +20,7 @@ export default function Home() {
         />
        
         </div>
-        <p className="font-bold text-center mb-2">
+        <p className="font-serif italic font-bold text-center mb-2">
           Oppdag de spektakulære fjellene og turene i Sykkylven!.</p>   
    
    <div className="mt-6 flex flex-col items-center space-y-1">

@@ -26,18 +26,29 @@ export default function HoletindenePage() {
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-4">Holetindene</h1>
        
-               <div className="relative flex justify-center w-full h-72 md:h-96 rounded-full overflow-hidden">
+               <div className="relative flex justify-center w-full h-80 md:h-96 rounded-full overflow-hidden">
                  <Image
                    src="/Holetindene.jpg"
                    alt="Holetindene"
                    fill
-                   className=" object-cover"
+                   className="object-contain"
                  />
                </div>
                <p className="font-serif italic mb-4 mt-2">Holetindene & Ystevasshornet sett fra Brunstadkollen</p>
 
 
-          <RuteInfo
+          
+
+        <p className="font-serif italic mb-2 mt-6">
+          Holetindene finner du i vakre Velledalen, som er en 10 minutters
+          kjøretur fra sentrum av Sykkylven.
+        </p>
+              
+         <h2 className="text-2xl font-bold mb-2 mt-4">
+          Turbeskrivelse
+         </h2>
+
+         <RuteInfo
           rangering="RØD"
           rangeringFarge="text-red-500"
           hoydemeter={1242}
@@ -46,10 +57,13 @@ export default function HoletindenePage() {
           tidsbruk="3-5 timer"
         />
 
-        <p className="font-serif italic mb-2 mt-6">
-          Holetindene finner du i vakre Velledalen, som er en 10 minutters
-          kjøretur fra sentrum av Sykkylven.
+        <p className="font-serif italic mb-2 mt-4">
+          Turen til Holetindene starter ved Brunstad Kraftverk, som er utgangspunktet til mange flotte turer i området.
         </p>
+        <p className="font-serif italic mb-2 mt-2">
+          Parkering ved Brunstad Kraftverk er gratis, og det er god plass til mange biler.
+          </p>
+
 
         <section className="flex flex-col md:flex-row gap-6 mt-2">
           <div className="rounded-lg overflow-hidden shadow-lg flex-1">
@@ -81,7 +95,7 @@ export default function HoletindenePage() {
           </div>
         </section>
       
-        <p className="font-serif italic">
+        <p className="font-serif italic mt-4">
           Etter man har fått parkert går turen til Brunstadsætra, som du kan finner beskrivelse på her⬇️.
         </p>
          <div className="mt-4 flex flex-col items-center mb-4">
