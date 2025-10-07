@@ -11,6 +11,7 @@ const emojiMap = {
 
   lightrain: { text: "Lett regn", emoji: "🌦️" },
   rain: { text: "Regn ", emoji: "🌧️" },
+  lightrainshowers_day: { text: "Lett regnbyger (dag)", emoji: "🌦️" },
   heavyrain: { text: "Kraftig regn ", emoji: "🌧️💦" },
 
   lightsnow: { text: "Lett snø", emoji: "🌨️" },
