@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function LinkPreview() {
+export default function BrunstadsaetraPreview() {
   return (
     <a
       href="https://ut.no/turforslag/118688/brunstadstra-via-morkja"
