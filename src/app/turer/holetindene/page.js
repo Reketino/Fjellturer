@@ -29,7 +29,7 @@ export default function HoletindenePage() {
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-4">Holetindene</h1>
 
-        <div className="relative flex justify-center w-full h-80 md:h-96 rounded-full overflow-hidden">
+        <div className="relative flex justify-center w-full h-[400px] md:h-[600px] rounded-3xl overflow-hidden">
           <Image
             src="/Holetindene.jpg"
             alt="Holetindene"
@@ -37,7 +37,7 @@ export default function HoletindenePage() {
             className="object-contain"
           />
         </div>
-        <p className="font-serif italic mb-4 mt-2">
+        <p className="font-serif italic mb-2 mt-2">
           Holetindene & Ystevasshornet sett fra Brunstadkollen
         </p>
 

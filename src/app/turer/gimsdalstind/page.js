@@ -17,19 +17,18 @@ export default function GimsdalstindPage() {
   return (
     <div className="flex flex-col items-center gap-4 p-6 sm:p-20">
       <h1 className=" font-extrabold text-4xl p-8">Gimsdalstinden</h1>
-      <div className="relative w-200 h-200">
+      <div className="relative flex justify-center w-full h-[400px] md:h-[600px] rounded-3xl overflow-hidden">
         <Image
           src="/Gimsdalstinden.jpg"
           alt="Gimsdalstinden"
-          width={1600}
-          height={900}
-          className="rounded-full object-cover w-full h-full"
+          fill
+          className="object-contain"
         />
-        <p className="text-center font-serif italic mb-4 mt-2">
+        </div>
+         <p className="text-center font-serif italic mb-4 mt-2">
           Gimsdalstinden sett i fra Gimsdalssætra
         </p>
-      </div>
-
+      
       <p className="text-center font-serif italic mb-4 mt-6">
         Gimsdaldstind er med sine 1007 høydemeter over havet, en av de mange
         flotte turene man kan ta i Sykkylven. Turen byr på en magisk utover
