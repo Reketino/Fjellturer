@@ -1,19 +1,21 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ImageCard() {
   return (
     <div className="max-w-sm mx-auto rounded-2xl overflow-hidden shadow-lg relative">
-      <img
+      <Image
         src="/instagramkort.gif"
         alt="Fjell"
         width={1000}
         height={500}
         className="object-cover w-full h-56 brightness-75"
+        unoptimized
       />
 
       <div className="absolute inset-0 flex items-center justify-center gap-6">
         <Link href="https://www.facebook.com/bjorn.e.lyngstad/" target="_blank">
-          <img
+          <Image
             src="/facebook.jpg"
             alt="Facebook"
             width={70}
@@ -22,8 +24,8 @@ export default function ImageCard() {
           />
         </Link>
 
-        <Link href="https://www.instagram.com/bjornlyngstad/" target="_blank">
-          <img
+        <Link href="https://www.instagram.com/beareven/" target="_blank">
+          <Image
             src="/instagram.jpg"
             alt="Instagram"
             width={70}
@@ -36,7 +38,7 @@ export default function ImageCard() {
         href="https://mail.google.com/mail/?view=cm&to=bjornevensk8@gmail.com"
         rel="noopener noreferrer"
         >
-          <img
+          <Image
             src="/mail.jpg"
             alt="Email"
             width={70}
