@@ -110,7 +110,7 @@ export default function UrfjelletPage() {
           <div className="flex flex-col md:flex-row gap-6 items-stretch">
             <div className="flex-1 flex flex-col items-center justify-between bg-gray-950 p-4 rounded-lg shadow">
               <Image
-                src="/Urfjelletiltopp.gif"
+                src="/urfjelletiltopp.gif"
                 alt="Urfjellet sett fra Svadfjellet"
                 width={500}
                 height={400}
@@ -143,7 +143,7 @@ export default function UrfjelletPage() {
 
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 items-center mb-2">
           <Image
-            src="/Urfjelltopp.jpg"
+            src="/urfjelltopp.jpg"
             alt="Utsikt fra Toppen av Urfjellet"
             width={600}
             height={400}
