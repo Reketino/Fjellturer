@@ -14,7 +14,7 @@ export default function ImageCard() {
       />
 
       <div className="absolute inset-0 flex items-center justify-center gap-6">
-        <Link href="https://www.facebook.com/bjorn.e.lyngstad/" target="_blank">
+        <Link href="https://www.facebook.com/bjorn.e.lyngstad/">
           <Image
             src="/facebook.jpg"
             alt="Facebook"
@@ -24,7 +24,7 @@ export default function ImageCard() {
           />
         </Link>
 
-        <Link href="https://www.instagram.com/beareven/" target="_blank">
+        <Link href="https://www.instagram.com/beareven/">
           <Image
             src="/instagram.jpg"
             alt="Instagram"
