@@ -13,8 +13,11 @@ import Brunstadsaetra from "@/components/Brunstadsaeter";
 const Bkollen = Brunstadkollen;
 const Bsaetra = Brunstadsaetra;
 
-
 const HoletindeneMap = dynamic(() => import("@/components/HoletindeneMap"), {
+  ssr: false,
+});
+
+const Holetind2Map = dynamic(() => import("@/components/Holetind2Map"), {
   ssr: false,
 });
 
@@ -25,30 +28,27 @@ export default function HoletindenePage() {
     <main className="flex flex-col items-center gap-4 p-6 sm:p-20">
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-4">Holetindene</h1>
-       
-               <div className="relative flex justify-center w-full h-80 md:h-96 rounded-full overflow-hidden">
-                 <Image
-                   src="/Holetindene.jpg"
-                   alt="Holetindene"
-                   fill
-                   className="object-contain"
-                 />
-               </div>
-               <p className="font-serif italic mb-4 mt-2">Holetindene & Ystevasshornet sett fra Brunstadkollen</p>
 
-
-          
+        <div className="relative flex justify-center w-full h-80 md:h-96 rounded-full overflow-hidden">
+          <Image
+            src="/Holetindene.jpg"
+            alt="Holetindene"
+            fill
+            className="object-contain"
+          />
+        </div>
+        <p className="font-serif italic mb-4 mt-2">
+          Holetindene & Ystevasshornet sett fra Brunstadkollen
+        </p>
 
         <p className="font-serif italic mb-2 mt-6">
           Holetindene finner du i vakre Velledalen, som er en 10 minutters
           kjøretur fra sentrum av Sykkylven.
         </p>
-              
-         <h2 className="text-2xl font-bold mb-2 mt-4">
-          Turbeskrivelse
-         </h2>
 
-         <RuteInfo
+        <h2 className="text-2xl font-bold mb-2 mt-4">Turbeskrivelse</h2>
+
+        <RuteInfo
           rangering="RØD"
           rangeringFarge="text-red-500"
           hoydemeter={1242}
@@ -58,12 +58,13 @@ export default function HoletindenePage() {
         />
 
         <p className="font-serif italic mb-2 mt-4">
-          Turen til Holetindene starter ved Brunstad Kraftverk, som er utgangspunktet til mange flotte turer i området.
+          Turen til Holetindene starter ved Brunstad Kraftverk, som er
+          utgangspunktet til mange flotte turer i området.
         </p>
         <p className="font-serif italic mb-2 mt-2">
-          Parkering ved Brunstad Kraftverk er gratis, og det er god plass til mange biler.
-          </p>
-
+          Parkering ved Brunstad Kraftverk er gratis, og det er god plass til
+          mange biler.
+        </p>
 
         <section className="flex flex-col md:flex-row gap-6 mt-2">
           <div className="rounded-lg overflow-hidden shadow-lg flex-1">
@@ -94,39 +95,121 @@ export default function HoletindenePage() {
             </p>
           </div>
         </section>
-      
+
         <p className="font-serif italic mt-4">
-          Etter man har fått parkert går turen til Brunstadsætra, som du kan finner beskrivelse på her⬇️.
+          Etter man har fått parkert går turen til Brunstadsætra, som du kan
+          finner beskrivelse på her⬇️.
         </p>
-         <div className="mt-4 flex flex-col items-center mb-4">
-                  <h2 className="font-semibold text-center">
-                    Ruten til Brunstadsætra:
-                  </h2>
-                  <Brunstadsaetra />
-                </div>
+        <div className="mt-4 flex flex-col items-center mb-4">
+          <h2 className="font-semibold text-center">
+            Ruten til Brunstadsætra:
+          </h2>
+          <Brunstadsaetra />
+        </div>
 
         <p className="font-serif italic">
           Etter en liten pust i bakken på Brunstadsætra, går turen videre til
           Brunstadkollen, som du kan finne beskrivelse på her⬇️.
         </p>
-         <div className="mt-4 flex flex-col items-center mb-4">
-                  <h2 className="font-semibold text-center">
-                    Ruten til Brunstadkollen:
-                  </h2>
-                  <Brunstadkollen />
-                </div>
-        
-
-
-        
-
-        <h2 className="text-center text-xl font-extrabold">
-          Her er ruten opp til Holetindene.
-        </h2>
-        
-        <div className="items-center flex justify-center w-full">
-          <HoletindeneMap />
+        <div className="mt-4 flex flex-col items-center mb-4">
+          <h2 className="font-semibold text-center">
+            Ruten til Brunstadkollen:
+          </h2>
+          <Brunstadkollen />
         </div>
+
+        <p className="font-serif italic mt-4 mb-2">
+          Etter man har komt til Brunstadkollen gjenstår den siste bratte biten
+          opp til Holetindene.
+        </p>
+
+        <div className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center mb-4">
+          <Image
+            src="/veiopphtind.gif"
+            alt="Veien opp til Holetindene"
+            width={600}
+            height={400}
+            className="rounded-lg object-cover"
+            unoptimized
+          />
+          <p className="font-serif italic text-center font-semibold mt-2">
+            Veien opp til Holetindene.
+          </p>
+          <p className="text-center mt-2 mb-4">
+            ⚠️ Råsen kan være litt vanskelig å finne.
+          </p>
+        </div>
+
+        <p className="font-serif italic mt-4">
+          Det er også mulig å følge hele ryggen opp til Holetind.
+        </p>
+
+        <div className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center mb-4">
+          <p className="text-center  mt-2 mb-2">
+            Legger ved film på den ruten her ⬇️
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/-jxi2nq3MKA?si=goSV-LZf2dRAdWMS"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </p>
+        </div>
+
+        <h2 className="text-center text-xl font-extrabold mt-4 mb-4">
+          Toppen!🏔️
+        </h2>
+
+        <section className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center mb-4">
+          <div className="flex justify-center">
+            <video
+              src="/toppenhtind.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="rounded-lg shadow-lg  w-[300px] h-[500px] object-cover"
+            />
+          </div>
+          <p className="font-serif italic text-center font-semibold mt-2 mb-4">
+            Her er varden på toppen av Holetind (1242moh)🏔️.
+          </p>
+        </section>
+
+        <h2 className="text-center text-xl font-extrabold mb-4">
+          Her er rutene opp til Holetindene.
+        </h2>
+
+        <section className="flex flex-col md:flex-row justify-center items-start gap-8 mt-2 mb-6">
+          <div className="w-full md:w-1/2 max-w-[500px] text-center">
+            <p className="mb-2 font-semibold">
+              Man kan velge å gå av før man kommer til Brunstadkollen, som man
+              ser på ruten her⬇️
+            </p>
+            <div className="rounded-lg overflow-hidden shadow-md">
+              <HoletindeneMap />
+            </div>
+            <p className="mb-2 mt-2 font-semibold">
+              ⚠️ Her må man finne en grei plass å krysse elven!.
+            </p>
+          </div>
+
+          <div className="w-full md:w-1/2 max-w-[500px] text-center">
+            <p className="mb-2 font-semibold">
+              Eller gå helt opp til Brunstadkollen, og gå opp derfra derfra, som
+              man ser her⬇️
+            </p>
+            <div className="rounded-lg overflow-hidden shadow-md">
+              <Holetind2Map />
+            </div>
+          </div>
+        </section>
+
+        <h2 className="text-center text-4xl font-bold mt-4 mb-4">God Tur!🚶‍♂️</h2>
 
         <div className="p-8 text-center">
           <p>Hvor godt likte du forklaringen?</p>
