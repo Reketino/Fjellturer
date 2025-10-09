@@ -27,7 +27,15 @@ export default function HoletindenePage() {
   return (
     <main className="flex flex-col items-center gap-4 p-6 sm:p-20">
       <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Holetindene</h1>
+        <h1
+          className="mb-4 mt-2 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md"
+          style={{
+            backgroundImage:
+              "linear-gradient(to top, #1e293b 0%, #6b7280 30%, #f8fafc 60%, #bae6fd 85%, #38bdf8 100%)",
+          }}
+        >
+          Holetindene
+        </h1>
 
         <div className="relative flex justify-center w-full h-[400px] md:h-[600px] rounded-3xl overflow-hidden">
           <Image
