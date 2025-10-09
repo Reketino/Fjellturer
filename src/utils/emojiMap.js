@@ -14,6 +14,7 @@ const emojiMap = {
   lightrainshowers_day: { text: "Lette regnbyger (dag)", emoji: "🌦️" },
   rainshowers_day: { text: "Lette regnbyger (dag)", emoji: "🌦️" },
   heavyrain: { text: "Kraftig regn ", emoji: "🌧️💦" },
+  heavyrainshowers_day: { text: "Kraftige regnbyger (dag)", emoji: "🌧️☀️" },
 
   lightsnow: { text: "Lett snø", emoji: "🌨️" },
   snow: { text: "Snø ", emoji: "❄️" },
@@ -29,10 +30,31 @@ const emojiMap = {
   sleetshowers_day: { text: "Sluddbyger (dag)", emoji: "🌨️🌧️☀️" },
   sleetshowers_night: { text: "Sluddbyger (natt)", emoji: "🌨️🌧️🌙" },
   heavysleetshowers_day: { text: "Kraftige sluddbyger (dag)", emoji: "🌨️🌧️" },
-  heavysleetshowers_night: { text: "Kraftige sluddbyger (natt)", emoji: "🌨️🌧️🌙" },
+  heavysleetshowers_night: {
+    text: "Kraftige sluddbyger (natt)",
+    emoji: "🌨️🌧️🌙",
+  },
 
   fog: { text: "Tåke ", emoji: "🌫️" },
-  thunderstorm: { text: "Tordenvær ", emoji: "⛈️" },
+  fogday: { text: "Tåke (dag) ", emoji: "🌫️☀️" },
+  mist: { text: "Dis", emoji: "🌁" },
+  mist_day: { text: "Dis (dag)", emoji: "🌁☀️" },
+
+  thunderstorm: { text: "Tordenvær", emoji: "⛈️" },
+  lightrainandthunder: { text: "Lett regn og tordenvær", emoji: "🌦️⚡" },
+  rainandthunder: { text: "Regn og tordenvær", emoji: "🌧️⚡" },
+  heavyrainandthunder: { text: "Kraftig regn og tordenvær", emoji: "⛈️" },
+  lightrainshowersandthunder_day: {
+    text: "Lette regnbyger og tordenvær (dag)",
+    emoji: "🌦️⚡",
+  },
+  rainshowersandthunder_day: {
+    text: "Regnbyger og tordenvær (dag)",
+    emoji: "🌧️⚡",
+  },
+  lightsnowandthunder: { text: "Lett snø og tordenvær", emoji: "🌨️⚡" },
+  snowandthunder: { text: "Snø og tordenvær", emoji: "❄️⚡" },
+  heavysnowandthunder: { text: "Kraftig snø og tordenvær", emoji: "❄️⚡⚡" },
 };
 
 export default emojiMap;
