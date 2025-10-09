@@ -18,20 +18,27 @@ export default function LafjelletPage() {
   return (
     <main className="flex flex-col items-center flex-1 ">
       <div className="text-center flex-center">
-        <h1 className="text-4xl font-bold mb-4">Lafjellet</h1>
+        <h1 className="mb-4 mt-4 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md" 
+        style={{
+    backgroundImage:
+      "linear-gradient(to top, #1e293b 0%, #6b7280 30%, #f8fafc 60%, #bae6fd 85%, #38bdf8 100%)",
+  }}
+  >
+          Lafjellet
+          </h1>
 
-        <div className="relative w-200 h-200">
-          <Image
-            src="/Lafjellet.png"
-            alt="Lafjellet"
-            width={1600}
-            height={900}
-            className="rounded-full object-cover w-full h-full"
-          />
-        </div>
-        <p className="font-serif italic mb-4 mt-6">
-          Baksiden av Lafjellet sett i fra parkeringen hvor man starter
-        </p>
+        <div className="flex justify-center">
+  <Image
+    src="/Lafjelletdal.jpg"
+    alt="Lafjellet"
+    width={1200}
+    height={800}
+    className="rounded-3xl object-contain"
+  />
+</div>
+        <h1 className="font-serif italic mb-2 mt-2">
+          Lafjellet sett i fra Blåtinden
+        </h1>
         <RuteInfo
           rangering="RØD"
           rangeringFarge="text-red-500"
@@ -42,9 +49,9 @@ export default function LafjelletPage() {
         />
         <section className="flex flex-col md:flex-row gap-6 mt-2">
           <div className="rounded-lg overflow-hidden shadow-lg flex-1">
-            <p className="mt-4">
+            <p className="mt-4 mb-4">
               Etter man har fått parkert, starter turen opp denne grusveien som
-              man ser her.
+              man ser her⬇️.
             </p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!4v1758908015427!6m8!1m7!1s_VSzZ3vuEMbSmIbWOqTcGA!2m2!1d62.32814944238157!2d6.758293178381267!3f290.1921148800171!4f2.4877391115190335!5f3.123130152753552"
