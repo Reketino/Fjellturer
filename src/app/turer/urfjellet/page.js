@@ -19,7 +19,15 @@ export default function UrfjelletPage() {
   return (
     <main className="flex flex-col items-center flex-1 p-8 pb-20 gap-8 sm:p-20">
       <div className="text-center flex-center">
-        <h1 className="text-4xl font-bold mb-4">Urfjellet</h1>
+        <h1
+          className="mb-4 mt-2 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md"
+          style={{
+            backgroundImage:
+              "linear-gradient(to top, #1e293b 0%, #6b7280 30%, #f8fafc 60%, #bae6fd 85%, #38bdf8 100%)",
+          }}
+        >
+          Urfjellet
+        </h1>
 
         <div className="relative flex justify-center">
           <Image

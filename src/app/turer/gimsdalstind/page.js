@@ -16,7 +16,17 @@ export default function GimsdalstindPage() {
 
   return (
     <div className="flex flex-col items-center gap-4 p-6 sm:p-20">
-      <h1 className=" font-extrabold text-4xl p-8">Gimsdalstinden</h1>
+      <h1
+          className="mb-4 mt-4 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md"
+          style={{
+            backgroundImage:
+              "linear-gradient(to top, #1e293b 0%, #6b7280 30%, #f8fafc 60%, #bae6fd 85%, #38bdf8 100%)",
+          }}
+        >
+          Gimsdalstind
+        </h1>
+
+
       <div className="relative flex justify-center w-full h-[400px] md:h-[600px] rounded-3xl overflow-hidden">
         <Image
           src="/Gimsdalstinden.jpg"
