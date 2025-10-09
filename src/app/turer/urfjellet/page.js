@@ -40,6 +40,8 @@ export default function UrfjelletPage() {
           På toppen vil man få en fantastisk utsikt over Hammarsettindene,
           Langeneset, ned mot Sykkylven & utover mot Ålesund.
         </p>
+       
+          <h2 className="text-3xl font-semibold mb-2 mt-4">Turbeskrivelse</h2>
 
         <RuteInfo
           rangering="RØD"
