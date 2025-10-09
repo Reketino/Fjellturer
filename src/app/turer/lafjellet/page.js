@@ -18,7 +18,14 @@ export default function LafjelletPage() {
   return (
     <main className="flex flex-col items-center flex-1 ">
       <div className="text-center flex-center">
-        <h1 className="mb-4 mt-4 text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-gray-800 via-gray-400 to-white">Lafjellet</h1>
+        <h1 className="mb-4 mt-4 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md" 
+        style={{
+    backgroundImage:
+      "linear-gradient(to top, #1e293b 0%, #6b7280 30%, #f8fafc 60%, #bae6fd 85%, #38bdf8 100%)",
+  }}
+  >
+          Lafjellet
+          </h1>
 
         <div className="flex justify-center">
   <Image
