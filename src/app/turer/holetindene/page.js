@@ -15,17 +15,19 @@ const Bsaetra = Brunstadsaetra;
 
 const HoletindeneMap = dynamic(() => import("@/components/HoletindeneMap"), {
   ssr: false,
+  loading: () => <p>Laster kart...</p>,
 });
 
 const Holetind2Map = dynamic(() => import("@/components/Holetind2Map"), {
   ssr: false,
+  loading: () => <p>Laster kart...</p>,
 });
 
 export default function HoletindenePage() {
   const [rating, setRating] = useState(0);
 
   return (
-    <main className="flex flex-col items-center gap-4 p-6 sm:p-20">
+    <main className="flex flex-col items-center gap-4 p-6 sm:p-5">
       <div className="text-center">
         <h1
           className="mb-4 mt-2 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md"
@@ -37,12 +39,13 @@ export default function HoletindenePage() {
           Holetindene
         </h1>
 
-        <div className="relative flex justify-center w-full h-[400px] md:h-[600px] rounded-3xl overflow-hidden">
+        <div className="flex justify-center ">
           <Image
             src="/Holetindene.jpg"
             alt="Holetindene"
-            fill
-            className="object-contain"
+            width={1200}
+            height={800}
+            className="rounded-3xl object-contain"
           />
         </div>
         <p className="font-serif italic mb-2 mt-2">

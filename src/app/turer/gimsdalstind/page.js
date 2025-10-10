@@ -9,13 +9,14 @@ import dynamic from "next/dynamic";
 
 const Vaerdata = dynamic(() => import("@/components/Vaerdata"), {
   ssr: false,
+  loading: () => <p>Laster værdata...</p>,
 });
 
 export default function GimsdalstindPage() {
   const [rating, setRating] = useState(0);
 
   return (
-    <div className="flex flex-col items-center gap-4 p-6 sm:p-20">
+    <div className="flex flex-col items-center gap-4 p-6 sm:p-5">
       <h1
           className="mb-4 mt-4 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md"
           style={{
@@ -27,14 +28,15 @@ export default function GimsdalstindPage() {
         </h1>
 
 
-      <div className="relative flex justify-center w-full h-[400px] md:h-[600px] rounded-3xl overflow-hidden">
-        <Image
-          src="/Gimsdalstinden.jpg"
-          alt="Gimsdalstinden"
-          fill
-          className="object-contain"
-        />
-        </div>
+     <div className="flex justify-center ">
+               <Image
+                 src="/Gimsdalstinden.jpg"
+                 alt="Gimsdalstinden"
+                 width={1200}
+                 height={800}
+                 className="rounded-3xl object-contain"
+               />
+             </div>
          <p className="text-center font-serif italic mb-4 mt-2">
           Gimsdalstinden sett i fra Gimsdalssætra
         </p>
