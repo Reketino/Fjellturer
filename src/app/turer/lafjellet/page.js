@@ -39,9 +39,9 @@ export default function LafjelletPage() {
             className="rounded-3xl object-contain"
           />
         </div>
-        <h1 className="font-serif italic mb-2 mt-2">
+        <p className="font-serif italic mb-2 mt-2">
           Lafjellet sett i fra Blåtinden
-        </h1>
+        </p>
 
         <p className="font-serif italic mb-2 mt-6">
           Lafjellet ligger i Velledalen, men turen starter etter lite stykke før
