@@ -11,16 +11,17 @@ import Skiarena from "@/components/Skiarena";
 
 const LafjelletMap = dynamic(() => import("@/components/LafjelletMap"), {
   ssr: false,
+  loading: () => <p>Laster kart...</p>,
 });
 
 export default function LafjelletPage() {
   const [rating, setRating] = useState(0);
 
   return (
-    <main className="flex flex-col items-center flex-1 ">
+    <main className="flex flex-col items-center gap-4 p-6 sm:p-5">
       <div className="text-center flex-center">
         <h1
-          className="mb-4 mt-4 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md"
+          className="mb-4 mt-2 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md"
           style={{
             backgroundImage:
               "linear-gradient(to top, #1e293b 0%, #6b7280 30%, #f8fafc 60%, #bae6fd 85%, #38bdf8 100%)",

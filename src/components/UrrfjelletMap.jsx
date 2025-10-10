@@ -10,6 +10,7 @@ function GpxTrack() {
 
   useEffect(() => {
     let gpxLayer;
+    
 
     import("leaflet-gpx")
       .then(() => {

@@ -11,13 +11,14 @@ import Koppen from "@/components/Koppen";
 
 const UrfjelletMap = dynamic(() => import("@/components/UrrfjelletMap"), {
   ssr: false,
+  loading: () => <p>Laster kart...</p>,
 });
 
 export default function UrfjelletPage() {
   const [rating, setRating] = useState(0);
 
   return (
-    <main className="flex flex-col items-center flex-1 ">
+    <main className="flex flex-col items-center gap-4 p-6 sm:p-5">
       <div className="text-center flex-center">
         <h1
           className="mb-4 mt-2 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md"
@@ -29,16 +30,18 @@ export default function UrfjelletPage() {
           Urfjellet
         </h1>
 
-        <div className="flex justify-center mt-4 mb-4">
-                  <Image
-                    src="/Urfjellet.jpg"
-                    alt="Urfjellet"
-                    width={960}
-                    height={600}
-                    className="rounded-3xl object-contain"
-                  />
-                </div>
-        <p className="font-serif italic mb-4 mt-2">Urfjellet sett fra Koppen</p>
+        <div className="flex justify-center mt-4 mb-2">
+          <Image
+            src="/Urfjellet.jpg"
+            alt="Urfjellet"
+            width={960}
+            height={600}
+            className="rounded-3xl object-cover"
+          />
+        </div>
+        <p className="font-serif italic mb-4 mt-2">
+          Urfjellet sett i fra Koppen
+        </p>
 
         <p className="text-center font-serif italic mb-2 mt-4">
           Urfjellet på 1267, er enda en av de mange flotte & lengre turene fra
@@ -48,8 +51,8 @@ export default function UrfjelletPage() {
           På toppen vil man få en fantastisk utsikt over Hammarsettindene,
           Langeneset, ned mot Sykkylven & utover mot Ålesund.
         </p>
-       
-          <h2 className="text-3xl font-semibold mb-2 mt-4">Turbeskrivelse</h2>
+
+        <h2 className="text-3xl font-semibold mb-2 mt-4">Turbeskrivelse</h2>
 
         <RuteInfo
           rangering="RØD"
