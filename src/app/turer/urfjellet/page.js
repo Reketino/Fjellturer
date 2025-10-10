@@ -32,7 +32,7 @@ export default function UrfjelletPage() {
 
         <div className="flex justify-center mt-4 mb-2">
           <Image
-            src="/Urfjellet.jpg"
+            src="/urfjellet.jpg"
             alt="Urfjellet"
             width={960}
             height={600}
