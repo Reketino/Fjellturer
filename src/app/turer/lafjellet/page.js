@@ -74,8 +74,8 @@ export default function LafjelletPage() {
         <section className="flex flex-col md:flex-row gap-6 mt-2">
           <div className="rounded-lg overflow-hidden shadow-lg flex flex-col justify-between">
             <p className="mt-4 mb-4">
-              Etter å ha komt et lite stykke opp mot Fjellsæter, kommer man til denne parkeringen. 
-              Som er utgangspunktet for turen til Lafjellet.⬇️
+              Etter å ha komt et lite stykke opp mot Fjellsæter, kommer man til denne parkeringen⬇️. 
+              Som er utgangspunktet for turen til Lafjellet.
             </p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!4v1760039164945!6m8!1m7!1slI9M1ddo6o5bC6AROrwxpw!2m2!1d62.32682670720544!2d6.757637075295016!3f334.29280187875247!4f4.235370690399492!5f0.7820865974627469"

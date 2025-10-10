@@ -17,7 +17,7 @@ export default function UrfjelletPage() {
   const [rating, setRating] = useState(0);
 
   return (
-    <main className="flex flex-col items-center flex-1 p-8 pb-20 gap-8 sm:p-20">
+    <main className="flex flex-col items-center flex-1 ">
       <div className="text-center flex-center">
         <h1
           className="mb-4 mt-2 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md"
@@ -29,15 +29,15 @@ export default function UrfjelletPage() {
           Urfjellet
         </h1>
 
-        <div className="relative flex justify-center">
-          <Image
-            src="/urfjellet.jpg"
-            alt="Urfjellet"
-            width={800}
-            height={400}
-            className="rounded-full set-h-[300px] object-cover"
-          />
-        </div>
+        <div className="flex justify-center mt-4 mb-4">
+                  <Image
+                    src="/Urfjellet.jpg"
+                    alt="Urfjellet"
+                    width={960}
+                    height={600}
+                    className="rounded-3xl object-contain"
+                  />
+                </div>
         <p className="font-serif italic mb-4 mt-2">Urfjellet sett fra Koppen</p>
 
         <p className="text-center font-serif italic mb-2 mt-4">
