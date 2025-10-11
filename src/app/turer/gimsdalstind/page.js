@@ -16,7 +16,7 @@ export default function GimsdalstindPage() {
   const [rating, setRating] = useState(0);
 
   return (
-    <div className="flex flex-col items-center gap-4 p-6 sm:p-5">
+    <main className="flex flex-col items-center gap-4 p-6 sm:p-5">
       <h1
           className="mb-4 mt-4 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md"
           style={{
@@ -290,6 +290,6 @@ export default function GimsdalstindPage() {
       </div>
 
       <Vaerdata title="Gimsdalstind" lat={62.3416} lon={6.655} altitude={1007} />
-    </div>
+    </main>
   );
 }

@@ -52,9 +52,9 @@ export default function LafjelletPage() {
         </p>
 
         <div className="mt-4 flex flex-col items-center mb-4">
-                  <h2 className="font-semibold text-center">
+                  <p className="font-semibold text-center">
                     Les mer om Fjellsætra Skiarena her!
-                  </h2>
+                  </p>
                   <Skiarena />
                 </div>
         

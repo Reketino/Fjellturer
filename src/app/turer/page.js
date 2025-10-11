@@ -4,7 +4,7 @@ import WeatherCard from "@/components/weathercard";
 
 export default function TurerPage() {
   return (
-    <div className="p-8">
+    <main className="p-8">
       <h1 className="text-3xl font-bold text-center mb-10">
         Fjellturer med beskrivelse
       </h1>
@@ -60,6 +60,6 @@ export default function TurerPage() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
