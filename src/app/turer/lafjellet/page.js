@@ -8,6 +8,7 @@ import Image from "next/image";
 import RuteInfo from "@/components/RuteInfo";
 import dynamic from "next/dynamic";
 import Skiarena from "@/components/Skiarena";
+import Langfjella from "@/components/Langfjella";
 
 const LafjelletMap = dynamic(() => import("@/components/LafjelletMap"), {
   ssr: false,
@@ -58,8 +59,6 @@ export default function LafjelletPage() {
                   <Skiarena />
                 </div>
         
-
-        
         <h2 className="text-3xl font-semibold mb-2 mt-4">Turbeskrivelse</h2>
        
        <RuteInfo
@@ -70,7 +69,6 @@ export default function LafjelletPage() {
           kilometer={6.62}
           tidsbruk="2-3 timer"
         />
-
 
         <section className="flex flex-col md:flex-row gap-6 mt-2">
           <div className="rounded-lg overflow-hidden shadow-lg flex flex-col justify-between">
@@ -102,6 +100,63 @@ export default function LafjelletPage() {
             ></iframe>
           </div>
         </section>
+
+        <p className="mt-4 mb-4">
+          Videre følger man samme ruten et lite stykke mot Langfjellet
+        </p>
+        <p className="mt-4 mb-4">
+          Linker til den her⬇️
+        </p>
+       
+       <div className="mt-4 flex flex-col items-center mb-4">
+                 <h2 className="font-semibold text-center">
+                   Ruten til Langfjella:
+                 </h2>
+                 <Langfjella />
+               </div>
+
+               <p className="mt-4 ">
+                Etter man har komt et stykke opp mot Sunndalsgroven & råsen flater ut, 
+               </p>
+               <p className="mb-4">
+                tar man av til venstre som jeg har krysset av her.⬇️
+                </p>
+
+              <div className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center mb-4">
+               <Image
+               src="/Lafjelletkryss.gif"
+               alt="Kryss ved Lafjellet"
+               width={600}
+               height={400}
+               className="rounded-lg object-cover"
+               unoptimized
+               />
+               <p className="font-italic font-semibold">
+              ⚠️ Stien kan være vanskelig å finne!.⚠️
+               </p>
+                </div>
+                 
+                <p className="mt-4">
+                  Man følger så den bratte ryggen opp.
+                </p>
+                <p className="mb-4">
+                  Råsen kan være vanskelig å finne i starten.
+                </p>
+                
+                <section className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center mb-4">
+                <div className="flex justify-center">
+                <video
+                src="/utydeligsti.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="rounded-lg shadow-lg  w-[300px] h-[500px] object-cover"
+              />
+              </div>
+              </section>
+
+                
 
         <h2 className="text-center text-xl font-extrabold mb-2">
           Her er ruten til Lafjellet.
