@@ -236,7 +236,7 @@ export default function GimsdalstindPage() {
           className="rounded-lg shadow-md w-full h-96 object-contain"
         />
         <p className="text-center">
-          Fantastsk utsikt over Sykkylven & postkasse med bok man kan skrive seg
+          Fantastisk utsikt over Sykkylven & postkasse med bok man kan skrive seg
           inn i.
         </p>
       </div>
