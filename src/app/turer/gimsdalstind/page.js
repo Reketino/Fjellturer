@@ -281,7 +281,7 @@ export default function GimsdalstindPage() {
         </div>
       </section>
 
-      <h1 className="text-center text-2xl font-extrabold mt-6">God Tur⛰️!.</h1>
+      <h2 className="text-center text-2xl font-extrabold mt-6">God Tur⛰️!.</h2>
 
       <div className="p-8">
         <p>Hvor godt likte du forklaringen?</p>
