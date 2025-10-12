@@ -40,7 +40,7 @@ export default function TurerPage() {
           </div>
         </div>
 
-        <div className="p-4 bg-[url('/lafjell.jpg')] bg-no-repeat bg-cover rounded-2xl shadow hover:shadow-lg transition">
+        <div className="p-4 bg-[url('/lafjell2.jpg')] bg-no-repeat bg-cover rounded-2xl shadow hover:shadow-lg transition">
           <div className="relative z-10 text-center">
             <Link
               href="/turer/lafjellet"
