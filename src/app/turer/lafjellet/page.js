@@ -139,12 +139,11 @@ export default function LafjelletPage() {
                 <p className="mt-4">
                   Man følger så den bratte ryggen opp.
                 </p>
-                <p className="mb-4">
+                <p className="mb-2">
                   Råsen kan være vanskelig å finne i starten.
                 </p>
                 
-                <section className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center mb-4">
-                <div className="flex justify-center">
+                <div className=" overflow-hidden  flex flex-col items-center mb-4">
                 <video
                 src="/utydeligsti.mp4"
               autoPlay
@@ -153,9 +152,29 @@ export default function LafjelletPage() {
               playsInline
               className="rounded-lg shadow-lg  w-[300px] h-[500px] object-cover"
               />
+              <p className=" text-center font-bold">
+                 ⚠️ Utydelig Sti
+              </p>
               </div>
-              </section>
+             
+             <p className="mt-4">
+             Oppe langs ryggen vil stien bli betraktelig mer synlig & enklere å finne.
+             </p>
+             <p className="mt-2">
+              Som man ser her⬇️
+             </p>
 
+             <div className=" overflow-hidden  flex flex-col items-center mb-4">
+                <video
+                src="/langsrygg.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="rounded-lg shadow-lg  w-[300px] h-[500px] object-cover"
+              />
+              </div>
+              
                 
 
         <h2 className="text-center text-xl font-extrabold mb-2">

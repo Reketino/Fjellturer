@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen overflow-x-hidden`}
       >
         
-         <div className="absolute top-4 right-4">
+         <div className="absolute top-4 right-4 z-50">
           <ThemeToggle />
         </div>
         <Navbar />
