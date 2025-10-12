@@ -178,7 +178,7 @@ export default function HoletindenePage() {
         <section className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center mb-4">
           <div className="flex justify-center">
             <video
-              src="/toppenhtind.mp4"
+              src="/Toppenhtind.mp4"
               autoPlay
               loop
               muted
