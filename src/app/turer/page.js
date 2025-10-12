@@ -4,10 +4,16 @@ import WeatherCard from "@/components/weathercard";
 
 export default function TurerPage() {
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold text-center mb-10">
-        Fjellturer med beskrivelse
-      </h1>
+    <main className="p-8">
+       <h1
+          className="mb-8 mt-2 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md text-center"
+          style={{
+            backgroundImage:
+              "linear-gradient(to top, #1e293b 0%, #6b7280 30%, #f8fafc 60%, #bae6fd 85%, #38bdf8 100%)",
+          }}
+        >
+          Fjellturer
+        </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
         <div className="p-10 bg-[url('/gimsdalstind.jpg')] bg-no-repeat bg-cover rounded-2xl shadow hover:shadow-lg transition">
@@ -60,6 +66,6 @@ export default function TurerPage() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

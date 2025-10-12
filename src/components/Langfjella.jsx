@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function LangfjellaPreview() {
   return (
     <a
-      href="https://morotur.no/tur/langfjella/"
+      href="https://morotur.no/tur/langfjella"
       target="_blank"
       rel="noopener noreferrer"
       className="block max-w-sm rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition"
