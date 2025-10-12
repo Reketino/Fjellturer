@@ -247,7 +247,7 @@ export default function LafjelletPage() {
           </p>
         </div>
 
-        <h2 className="text-center text-2xl font-extrabold mt-6">
+        <h2 className="text-center text-2xl font-extrabold mt-6 mb-6">
           God Tur⛰️!.
         </h2>
 
