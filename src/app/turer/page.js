@@ -16,7 +16,7 @@ export default function TurerPage() {
         </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
-        <div className="p-10 bg-[url('/gimsdalstind.jpg')] bg-no-repeat bg-cover rounded-2xl shadow hover:shadow-lg transition">
+        <div className="p-10 bg-[url('/Gimstdalstindvaer.jpeg')] bg-no-repeat bg-cover rounded-2xl shadow hover:shadow-lg transition">
           <div className="relative z-10 text-center">
             <Link
               href="/turer/gimsdalstind"
