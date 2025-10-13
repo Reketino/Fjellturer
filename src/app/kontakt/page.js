@@ -5,7 +5,7 @@ import ImageCard from "@/components/imagecard";
 
 export default function KontaktPage() {
   return (
-    <div className="text-center flex-center mb-20">
+    <main className="text-center flex-center mb-20">
       <h1
           className="mb-4 mt-4 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md"
           style={{
@@ -20,7 +20,7 @@ export default function KontaktPage() {
         med meg!
       </p>
       <ImageCard />
-      </div>
+      </main>
    );
 }
 
