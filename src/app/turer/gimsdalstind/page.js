@@ -16,38 +16,40 @@ export default function GimsdalstindPage() {
   const [rating, setRating] = useState(0);
 
   return (
-    <main className="flex flex-col items-center gap-4 p-6 sm:p-5">
+    <main className="flex flex-col items-center gap-2 p-6 sm:p-5">
       <h1
-          className="mb-4 mt-4 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md"
-          style={{
-            backgroundImage:
-              "linear-gradient(to top, #1e293b 0%, #6b7280 30%, #f8fafc 60%, #bae6fd 85%, #38bdf8 100%)",
-          }}
-        >
-          Gimsdalstind
-        </h1>
+        className="mb-4 mt-4 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md"
+        style={{
+          backgroundImage:
+            "linear-gradient(to top, #1e293b 0%, #6b7280 30%, #f8fafc 60%, #bae6fd 85%, #38bdf8 100%)",
+        }}
+      >
+        Gimsdalstind
+      </h1>
 
-
-     <div className="flex justify-center ">
-               <Image
-                 src="/Gimsdalstinden.jpg"
-                 alt="Gimsdalstinden"
-                 width={1200}
-                 height={800}
-                 className="rounded-3xl object-contain"
-               />
-             </div>
-         <p className="text-center font-serif italic mb-4 mt-2">
-          Gimsdalstinden sett i fra Gimsdalssætra
-        </p>
-      
-      <p className="text-center font-serif italic mb-4 mt-6">
-        Gimsdaldstind er med sine 1007 høydemeter over havet, en av de mange
-        flotte turene man kan ta i Sykkylven. Turen byr på en magisk utover
-        Sykkylven, Hammarsettindene & Straumshornet.
+      <div className="flex justify-center ">
+        <Image
+          src="/Gimsdalstinden.jpg"
+          alt="Gimsdalstinden"
+          width={1200}
+          height={800}
+          className="rounded-3xl object-contain"
+        />
+      </div>
+      <p className="text-center font-serif italic mb-4">
+        Gimsdalstinden sett i fra Gimsdalssætra
       </p>
 
-      <h1 className="text-2xl mt-5 font-extrabold">Turbeskrivelse</h1>
+      <p className="text-center mt-4">
+        Gimsdaldstind er med sine 1007 høydemeter over havet, en av de mange
+        flotte turene man kan ta i Sykkylven.
+      </p>
+      <p className="text-center mb-4">
+        Turen byr på en magisk utover Sykkylven, Hammarsettindene &
+        Straumshornet.
+      </p>
+
+      <h2 className="text-2xl mt-5 font-extrabold">Turbeskrivelse</h2>
       <Rutevelger />
 
       <div className="rounded-lg overflow-hidden shadow-lg flex-1 mt-4">
@@ -81,9 +83,12 @@ export default function GimsdalstindPage() {
             height={400}
             className="rounded-lg shadow-md w-full h-96 object-contain"
           />
-          <p className="font-bold  text-center">
+          <p className=" mt-2 font-bold text-center">
             Her starter man oppover mot toppen, og det vil bli en god del
-            brattere. Man kommer også inn i noe skog rett oppi her.
+            brattere.
+          </p>
+          <p className="font-bold text-center">
+            Man kommer også inn i noe skog rett oppi her.
           </p>
         </div>
       </section>
@@ -145,8 +150,8 @@ export default function GimsdalstindPage() {
       </section>
 
       <h2 className="text-center font-extrabold mt-4 ">
-        Nå kommer man til det partiet på turen, som er mest krevende & kan føles
-        luftig.
+        ⚠️Nå kommer man til det partiet på turen, som er mest krevende & kan
+        føles luftig.
       </h2>
 
       <section className="grid grid-cols-2 gap-6 mt-2">
@@ -223,11 +228,12 @@ export default function GimsdalstindPage() {
         </p>
       </div>
 
-      <div className="flex-1 flex-col rounded-lg overflow-hidden shadow-lg mt-5">
-        <h1 className="font-extrabold text-4xl p-2 text-center">Toppen!</h1>
-        <p className="font-light text-center mb-2">
-          Etter dette partiet er man oppe på Gimsdalstind.
-        </p>
+      <p className="font-light text-center">
+        Etter dette partiet er man oppe på Gimsdalstind.
+      </p>
+
+      <div className="flex-1 flex-col rounded-lg overflow-hidden shadow-lg mt-4">
+        <h2 className="font-extrabold text-4xl p-2 text-center">Toppen⛰️!</h2>
         <Image
           src="/Toppen3.jpeg"
           alt="Toppen"
@@ -235,18 +241,17 @@ export default function GimsdalstindPage() {
           height={400}
           className="rounded-lg shadow-md w-full h-96 object-contain"
         />
-        <p className="text-center">
-          Fantastisk utsikt over Sykkylven & postkasse med bok man kan skrive seg
-          inn i.
+        <p className="text-center font-serif italic">
+          Fantastisk utsikt over Sykkylven & postkasse med bok man kan skrive
+          seg inn i.
         </p>
       </div>
 
-      <h2 className="font-semibold text-center">
-        På toppen vil man ha panorama utsikt til andre topper rundt!
-      </h2>
-
-      <section className="grid grid-cols-1 gap-4">
-        <div className="flex-1 flex-col rounded-lg overflow-hidden shadow-lg mt-5">
+      <section className="grid grid-cols-1 gap-2">
+        <div className="flex-1 flex-col rounded-lg overflow-hidden shadow-lg mt-2">
+          <h2 className="font-semibold text-center">
+            På toppen vil man ha panorama utsikt til andre topper rundt!
+          </h2>
           <Image
             src="/Hammers.png"
             alt="Toppene rundt"
@@ -254,9 +259,8 @@ export default function GimsdalstindPage() {
             height={400}
             className="rounded-lg shadow-md w-full h-96 object-contain"
           />
-          <p className="mt-2 mb-2 font-bold text-center">
-            Her ser vi: Hammersettind fremst, Langfjellene til venstre, Blåtind
-            & Lafjellet helt bak til venstre.
+          <p className="mb-4 text-center font-serif italic">
+            God utsikt til: Hammersettindene, Langfjellene, Blåtind & Lafjellet.
           </p>
           <Image
             src="/Straumshornet.png"
@@ -265,8 +269,8 @@ export default function GimsdalstindPage() {
             height={400}
             className="rounded-lg shadow-md w-full h-96 object-contain"
           />
-          <p className="mt-2 mb-2 font-bold text-center">
-            Her ser vi: Dravlausegga & Straumshornet.
+          <p className="mb-4 font-serif italic text-center">
+            God utsikt til: Dravlausegga & Straumshornet.
           </p>
           <Image
             src="/Borgundkollen.png"
@@ -275,8 +279,8 @@ export default function GimsdalstindPage() {
             height={400}
             className="rounded-lg shadow-md w-full h-96 object-contain"
           />
-          <p className="mt-2 mb-2 font-bold text-center">
-            Her ser vi: Borgundkollen.
+          <p className="mb-4 font-serif italic text-center">
+            God utsikt til: Borgundkollen.
           </p>
         </div>
       </section>
@@ -289,7 +293,12 @@ export default function GimsdalstindPage() {
         <p className="text-center mt-2"> du ga {rating} stjerner</p>
       </div>
 
-      <Vaerdata title="Gimsdalstind" lat={62.3416} lon={6.655} altitude={1007} />
+      <Vaerdata
+        title="Gimsdalstind"
+        lat={62.3416}
+        lon={6.655}
+        altitude={1007}
+      />
     </main>
   );
 }
