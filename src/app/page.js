@@ -5,9 +5,12 @@ import Image from "next/image";
 export default function Home() {
   return (
     
-    <main className="flex flex-col items-center flex-1 p-4 pb-20 gap-6 sm:p-20">
+    <main className="flex flex-col items-center flex-1 pb-10 gap-4 sm:p-20">
         <div className="font-sans flex flex-col min-h-screen">
-        <h1 className="mb-4 font-extrabold text-center text-4xl">Sykkylven Fjell og Turer</h1>
+        <h1 
+        className="mb-6 text-center text-7xl font-extrabold bg-gradient-to-b from-slate-800 via-gray-600 to-stone-400 bg-clip-text text-transparent">
+          Sykkylven Fjell & Turer
+          </h1>
         
         <div className="w-full relative rounded-3xl overflow-hidden">
         <Image 
