@@ -27,8 +27,8 @@ export default function HoletindenePage() {
   const [rating, setRating] = useState(0);
 
   return (
-    <main className="flex flex-col items-center gap-4 p-6 sm:p-5">
-      <div className="text-center">
+    <main className="flex flex-col items-center gap-4 p-6 sm:p-5 overflow-x-hidden">
+      <div className="text-center sm:mx-10 text-wrap">
         <h1
           className="mb-4 mt-2 text-5xl font-extrabold text-transparent bg-clip-text drop-shadow-md"
           style={{
@@ -39,7 +39,7 @@ export default function HoletindenePage() {
           Holetindene
         </h1>
 
-        <div className="flex justify-center ">
+        <div className="flex justify-center">
           <Image
             src="/Holetindene.jpg"
             alt="Holetindene"
@@ -156,10 +156,10 @@ export default function HoletindenePage() {
         </p>
 
         <div className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center mb-4">
-          <p className="text-center  mt-2 mb-2">
-            Legger ved film på den ruten her ⬇️
+          <p className="text-center mt-2 mb-2">
+            Legger ved film på den ruten her ⬇
             <iframe
-              width="560"
+              width="360"
               height="315"
               src="https://www.youtube.com/embed/-jxi2nq3MKA?si=goSV-LZf2dRAdWMS"
               title="YouTube video player"
@@ -167,6 +167,7 @@ export default function HoletindenePage() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
+              className="lg:w-2xl"
             ></iframe>
           </p>
         </div>
