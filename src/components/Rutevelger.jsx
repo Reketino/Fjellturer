@@ -3,6 +3,7 @@
 import { useState } from "react";
 import RuteInfo from "./RuteInfo";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 const BlindheimMap = dynamic(() => import("@/components/BlindheimMap"), { ssr: false });
 const VikedalenMap = dynamic(() => import("@/components/VikedalenMap"), { ssr: false });
@@ -19,7 +20,7 @@ export default function Rutevelger() {
   };
 
   return (
-    <div className="mt-8 w-full max-w-5xl mx-auto">
+    <main className="mt-8 w-full max-w-5xl mx-auto">
       <div className="flex gap-4 justify-center mb-6">
         <button
           onClick={() => toggleRute("vikedalen")}
@@ -86,8 +87,7 @@ export default function Rutevelger() {
                 referrerPolicy="no-referrer-when-downgrade"
               />
               <p className="text-center font-semibold mt-2">
-                Her ser man veien frem mot Høyseth, med Gimsdalstinden fremst,
-                Hammarsettindene lenger bak og Borgundkollen til venstre.
+                Her ser man veien frem mot Høyseth, med god utsikt til Gimsdalstinden.
               </p>
             </div>
           </section>
@@ -102,10 +102,12 @@ export default function Rutevelger() {
 
           <section className="grid grid-cols-2 gap-6">
             <div>
-              <img
+              <Image
                 src="/ned til raas.gif"
                 alt="Råsen til broen"
-                className="rounded-lg shadow-md w-full h-96 object-contain"
+               width={800}
+            height={400}
+            className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
                 unoptimized
               />
               <p className="mt-2 text-center font-bold">
@@ -114,10 +116,12 @@ export default function Rutevelger() {
             </div>
 
             <div>
-              <img
+              <Image
                 src="/ned til bro.gif"
                 alt="Broen"
-                className="rounded-lg shadow-md w-full h-96 object-contain"
+                width={800}
+            height={400}
+            className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
                 unoptimized
               />
               <p className="mt-2 text-center font-bold">
@@ -171,10 +175,12 @@ export default function Rutevelger() {
             </div>
 
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
-              <img
+              <Image
                 src="/veienvidere.gif"
                 alt="Parkering Blindheimsbakkene"
-                className="w-full h-64 sm:h-96 object-cover"
+                width={800}
+            height={400}
+            className="rounded-lg shadow-md w-full h-96 object-contain"
                 unoptimized
               />
               <p className="text-center font-bold">
@@ -193,19 +199,23 @@ export default function Rutevelger() {
 
           <section className="grid grid-cols-2 gap-6 mt-2">
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
-              <img
+              <Image
                 src="/snarvei.jpeg"
                 alt="snarveien"
-                className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
+                width={800}
+            height={400}
+            className="rounded-lg shadow-md w-full h-96 object-contain"
               />
               <p className="text-center mb-6 font-bold">Opp her går snarveien.</p>
             </div>
 
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
-              <img
+              <Image
                 src="/vei.jpeg"
                 alt="vei med gimsdalstind i bakgrunn"
-                className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
+                width={800}
+            height={400}
+            className="rounded-lg shadow-md w-full h-96 object-contain"
               />
               <p className="text-center font-bold">
                 Hvis ikke er det bare å følge veien videre, med god utsikt til det endelige målet🚩.
@@ -213,10 +223,12 @@ export default function Rutevelger() {
             </div>
 
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
-              <img
+              <Image
                 src="/oppmotbro.jpeg"
                 alt="vei opp mot broen"
-                className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
+                width={800}
+            height={400}
+            className="rounded-lg shadow-md w-full h-96 object-contain"
               />
               <p className="text-center mt-2 font-bold">
                 Et lite stykke oppi her, vil råsene fra Vikedalen og Blindheimsbakkene flettes sammen🔀.
@@ -233,6 +245,6 @@ export default function Rutevelger() {
           </div>
         </section>
       )}
-    </div>
+    </main>
   );
 }
