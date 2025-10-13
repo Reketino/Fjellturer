@@ -69,7 +69,7 @@ export default function UrfjelletPage() {
         <div className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center">
           <iframe
             src="https://www.google.com/maps/embed?pb=!4v1759416354794!6m8!1m7!1sVB8tHFsEs5ySb0u_Z5tLfA!2m2!1d62.29194116728266!2d6.657225408158998!3f57.65601464103331!4f7.634504413804564!5f2.347694816175464"
-            className="w-[600px] h-64 sm:h-96"
+            className="w-full h-64 sm:h-96"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
@@ -134,7 +134,6 @@ export default function UrfjelletPage() {
                 ⚠️ Stien er mot slutten merket med varder, men masse ur!.
               </p>
             </div>
-
             <div className="flex-1 flex flex-col items-center justify-between bg-gray-950 p-4 rounded-lg shadow">
               <iframe
                 className="w-full h-64 md:h-full rounded-lg shadow-lg"
@@ -151,6 +150,8 @@ export default function UrfjelletPage() {
             </div>
           </div>
         </section>
+
+        
 
         <h2 className=" text-4xl font-bold text-center mt-4 mb-2">Toppen!🏔️</h2>
 
