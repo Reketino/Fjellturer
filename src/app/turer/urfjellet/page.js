@@ -114,7 +114,7 @@ export default function UrfjelletPage() {
           </p>
         </div>
 
-        <p className="text-center  mt-2 mb-2">
+        <p className="text-center mt-2">
           Når man har kommet på Svadfjellet, gjenstår den siste tyngste biten
           opp til Urfjellet.
         </p>
@@ -149,7 +149,7 @@ export default function UrfjelletPage() {
                 allowFullScreen
                 className="lg:w-2xl"
               />
-              <p className="font-serif italic text-center font-semibold mt-0.5 mb-4">
+              <p className="text-center font-bold mt-0.5 mb-4">
                 🎬 God film som viser ruten
               </p>
             </div>
