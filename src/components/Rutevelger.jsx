@@ -68,8 +68,8 @@ export default function Rutevelger() {
             />
           </div>
 
-          <p className="text-center mt-2">
-            Turen starter ved parkeringen til Høyseth, hvis man går opp fra
+          <p className="text-center mt-2 mb-2">
+            Turen starter ved parkeringen til Høyset, hvis man går opp fra
             Vikedalen.
           </p>
 
@@ -97,17 +97,44 @@ export default function Rutevelger() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
-              <p className="text-center font-semibold mt-2">
-                Her ser man veien frem mot Høyseth, med god utsikt til
-                Gimsdalstinden.
+              <p className="text-center font-semibold mt-1">
+                Veien frem mot Høyset, med god utsikt til målet🏁
               </p>
             </div>
           </section>
 
           <p className="text-center mb-2 mt-6">
-            Videre fra parkeringa følger man veien til Høyseth, for så å gå opp
+            Videre fra parkeringa følger man veien til Høyset, for så å gå opp
             til Gimsdalen.
           </p>
+
+          <section className="flex flex-col md:flex-row gap-6 mt-4">
+            <div className="rounded-lg overflow-hidden shadow-lg flex-1">
+              <Image
+                src="/Postkasse.png"
+                alt="Postkassen på Høyseth"
+                width={800}
+                height={400}
+                className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
+              />
+              <p className="text-center font-bold mt-1 mb-4">
+                Postkassen på Høyset, med bok å skrive seg inn i.
+              </p>
+            </div>
+
+            <div className="rounded-lg overflow-hidden shadow-lg flex-1">
+              <Image
+                src="/oppmotgdal.png"
+                alt="Veien opp til Gimsdalen"
+                width={800}
+                height={400}
+                className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
+              />
+              <p className="text-center font-bold mt-1 mb-4">
+                Veien opp til Gimsdalen fra Høyseth
+              </p>
+            </div>
+          </section>
 
           <p className="text-center mb-3">
             Når man kommer til postkassa på Gimsdalen, tar man til høyre ned
@@ -124,7 +151,7 @@ export default function Rutevelger() {
                 className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
                 unoptimized
               />
-              <p className="mt-2 text-center font-bold">
+              <p className="mt-1 text-center font-bold">
                 Her er råsen som fører ned til broen.
               </p>
             </div>
@@ -138,7 +165,7 @@ export default function Rutevelger() {
                 className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
                 unoptimized
               />
-              <p className="mt-2 text-center font-bold">
+              <p className="mt-1 text-center font-bold">
                 Her kommer man ned til broen.
               </p>
             </div>
@@ -148,7 +175,7 @@ export default function Rutevelger() {
             Her er turen fra Vikedalen.
           </p>
 
-          <div className="col-span-2 justify-items-center mx-auto w-full mt-2">
+          <div className="col-span-2 justify-items-center mx-auto w-full mt-0.5">
             <VikedalenMap />
           </div>
         </section>
@@ -175,40 +202,41 @@ export default function Rutevelger() {
             Man kan også gå opp fra andre siden av Vik elven på
             Blindheimsbakkane, dette er en god del kortere.
           </p>
+          <p className="text-center font-extrabold mb-2">
+            ⚠️ Bomvei koster 70 kroner, om man vil ha med seg kjøretøy.
+          </p>
 
           <section className="grid grid-cols-2 gap-6 mt-2">
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!4v1757775126054!6m8!1m7!1sSN6gbrjGmWhoA4uk-4mMVA!2m2!1d62.37427422446464!2d6.586577241891676!3f115.62029880003583!4f5.851649908097372!5f0.618543023297123"
-                className="w-full h-64 sm:h-96"
+                className="w-full aspect-video object-contain"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
-              <p className="text-center mt-2 font-bold">
-                Her er grusveien hvor man kjører frem til parkeringen, NB:
-                Bomvei 70 kroner for å passere.
+              <p className="text-center font-bold">
+                Grusveien man kjører frem til parkeringen.
               </p>
             </div>
 
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
               <Image
-                src="/veienvidere.gif"
+                src="/parkering.gif"
                 alt="Parkering Blindheimsbakkene"
                 width={800}
                 height={400}
-                className="rounded-lg shadow-md w-full h-96 object-contain"
+                className="w-full aspect-video object-contain bg-black"
                 unoptimized
               />
               <p className="text-center font-bold">
-                Etter å ha fulgt veien et godt stykke innover, vil man komme til
-                parkeringen som vist over🅿️.
+                Parkeringen som ligger et stykke lenger frem🅿️.
               </p>
             </div>
           </section>
 
-          <p className="text-center mt-5">
+          <p className="text-center mt-4">
             Etter man har parkert, er det bare å følge gruseveien som vist på
             bildet til høyre.
           </p>
@@ -218,45 +246,43 @@ export default function Rutevelger() {
             det mulighet for å ta en snarvei.
           </p>
 
-          <section className="grid grid-cols-2 gap-6 mt-2">
+          <section className="grid grid-cols-2 gap-4 mt-4">
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
               <Image
-                src="/snarvei.jpeg"
+                src="/snarvei.png"
                 alt="snarveien"
-                width={800}
-                height={400}
-                className="rounded-lg shadow-md w-full h-96 object-contain"
+                width={900}
+                height={600}
+                className="rounded-lg shadow-md w-full h-96 object-cover"
               />
-              <p className="text-center mb-6 font-bold">
+              <p className="text-center mb-4 font-bold">
                 Opp her går snarveien.
               </p>
             </div>
 
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
               <Image
-                src="/vei.jpeg"
+                src="/veien.png"
                 alt="vei med gimsdalstind i bakgrunn"
-                width={800}
-                height={400}
-                className="rounded-lg shadow-md w-full h-96 object-contain"
+                width={900}
+                height={600}
+                className="rounded-lg shadow-md w-full h-96 object-cover"
               />
               <p className="text-center font-bold">
-                Hvis ikke er det bare å følge veien videre, med god utsikt til
-                det endelige målet🚩.
+                Ellers følger man bare veien.
               </p>
             </div>
 
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
               <Image
-                src="/oppmotbro.jpeg"
+                src="/tur.png"
                 alt="vei opp mot broen"
-                width={800}
-                height={400}
-                className="rounded-lg shadow-md w-full h-96 object-contain"
+                width={900}
+                height={600}
+                className="rounded-lg shadow-md w-full h-96 object-cover"
               />
-              <p className="text-center mt-2 font-bold">
-                Et lite stykke oppi her, vil råsene fra Vikedalen og
-                Blindheimsbakkene flettes sammen🔀.
+              <p className="text-center  font-bold">
+                Rett opp her møtes råsene fra Vikedalen & Blindheimsbakkene.
               </p>
             </div>
           </section>
@@ -265,7 +291,7 @@ export default function Rutevelger() {
             Her er turen fra Blindheimsbakkene
           </p>
 
-          <div className="flex justify-center w-full mx-auto mt-2">
+          <div className="flex justify-center w-full mx-auto mt-1">
             <BlindheimMap />
           </div>
         </section>
