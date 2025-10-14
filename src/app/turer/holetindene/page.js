@@ -168,7 +168,8 @@ export default function HoletindenePage() {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="lg:w-2xl"
-            ></iframe>
+            >
+            </iframe>
           </p>
         </div>
 

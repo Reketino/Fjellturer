@@ -31,7 +31,7 @@ export default function LafjelletPage() {
           Lafjellet
         </h1>
 
-        <div className="flex justify-center ">
+        <div className="flex justify-center">
           <Image
             src="/Lafjelletdal.jpg"
             alt="Lafjellet"
