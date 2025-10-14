@@ -83,11 +83,11 @@ export default function GimsdalstindPage() {
             height={400}
             className="rounded-lg shadow-md w-full h-96 object-contain"
           />
-          <p className=" mt-2 font-bold text-center">
+          <p className="font-bold text-center">
             Her starter man oppover mot toppen, og det vil bli en god del
             brattere.
           </p>
-          <p className="font-bold text-center">
+          <p className="font-bold text-center mb-2">
             Man kommer også inn i noe skog rett oppi her.
           </p>
         </div>
@@ -102,7 +102,7 @@ export default function GimsdalstindPage() {
             height={400}
             className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
           />
-          <p className="mt-2 font-bold text-center">
+          <p className="mt-0.5 font-bold text-center">
             Her har man kommet ut av skogen, og det blir litt brattere
           </p>
         </div>
@@ -115,7 +115,7 @@ export default function GimsdalstindPage() {
             height={400}
             className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
           />
-          <p className="mt-2 font-bold text-center">
+          <p className="mt-0.5 font-bold text-center">
             Etter den seige motbakken må man krysse denne uren her.
           </p>
         </div>
@@ -129,7 +129,7 @@ export default function GimsdalstindPage() {
             className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
             unoptimized
           />
-          <p className="mt-2 font-bold text-center">
+          <p className="mt-0.5 font-bold text-center">
             Etter den første uren vil man komme hit. God utsikt her også!.
           </p>
         </div>
@@ -143,13 +143,13 @@ export default function GimsdalstindPage() {
             className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
             unoptimized
           />
-          <p className="mt-2 font-bold text-center">
+          <p className="mt-0.5 font-bold text-center">
             Et lite stykke lenger oppe vil man komme til denne eggen her.
           </p>
         </div>
       </section>
 
-      <h2 className="text-center font-extrabold mt-4 ">
+      <h2 className="text-center font-extrabold mt-2 ">
         ⚠️Nå kommer man til det partiet på turen, som er mest krevende & kan
         føles luftig.
       </h2>
@@ -164,7 +164,7 @@ export default function GimsdalstindPage() {
             className="w-full h-64 sm:h-96 object-contain shadow-md rounded-lg"
             unoptimized
           />
-          <p className="mt-2 font-bold text-center">
+          <p className="mt-0.5 font-bold text-center">
             Her begynner man oppover, med enkel klyving.
           </p>
         </div>
@@ -177,7 +177,7 @@ export default function GimsdalstindPage() {
             height={400}
             className="w-full h-64 sm:h-96 object-contain shadow-md rounded-lg"
           />
-          <p className="mt-2 font-bold text-center">
+          <p className="mt-0.5 font-bold text-center">
             Etter klyvingen, vil man komme opp hit.
           </p>
         </div>
@@ -191,7 +191,7 @@ export default function GimsdalstindPage() {
             className="w-full h-64 sm:h-96 object-contain shadow-md rounded-lg"
             unoptimized
           />
-          <p className="mt-2 font-bold text-center">
+          <p className="mt-0.5 font-bold text-center">
             Videre følger man denne eggen oppover.
           </p>
         </div>
@@ -206,7 +206,7 @@ export default function GimsdalstindPage() {
             unoptimized
           />
           <div className="px-2 text-center">
-            <p className="mt-2 font-bold text-sm sm:text-base leading-relaxed max-w-xs mx-auto">
+            <p className="mt-0.5 font-bold text-sm sm:text-base leading-relaxed max-w-xs mx-auto">
               Ett lite stykke lenger opp, kan man følge eggen som er mer luftig
               eller råsen til venstre
             </p>
@@ -223,12 +223,12 @@ export default function GimsdalstindPage() {
           className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
           unoptimized
         />
-        <p className="mt-2 font-bold text-center text-sm sm:text-base leading-relaxed">
+        <p className="mt-0.5 font-bold text-center text-sm sm:text-base leading-relaxed">
           Her ser man hvor man kommer igjen, om man går eggen eller råsen.
         </p>
       </div>
 
-      <p className="font-light text-center">
+      <p className="mt-2 font-light text-center">
         Etter dette partiet er man oppe på Gimsdalstind.
       </p>
 
