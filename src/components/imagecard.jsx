@@ -14,7 +14,11 @@ export default function ImageCard() {
       />
 
       <div className="absolute inset-0 flex items-center justify-center gap-6">
-        <Link href="https://www.facebook.com/bjorn.e.lyngstad/">
+        <Link
+          href="https://www.facebook.com/bjorn.e.lyngstad/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Image
             src="/Facebook.jpg"
             alt="Facebook"
@@ -24,7 +28,11 @@ export default function ImageCard() {
           />
         </Link>
 
-        <Link href="https://www.instagram.com/beareven/">
+        <Link
+          href="https://www.instagram.com/beareven/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Image
             src="/Instagram.jpg"
             alt="Instagram"
@@ -34,9 +42,10 @@ export default function ImageCard() {
           />
         </Link>
 
-        <a 
-        href="https://mail.google.com/mail/?view=cm&to=bjornevensk8@gmail.com"
-        rel="noopener noreferrer"
+        <a
+          href="https://mail.google.com/mail/?view=cm&to=bjornevensk8@gmail.com"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           <Image
             src="/mail.jpg"
