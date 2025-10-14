@@ -68,9 +68,8 @@ export default function Rutevelger() {
             />
           </div>
 
-          <p className="text-center mt-2 mb-2">
-            Turen starter ved parkeringen til Høyset, hvis man går opp fra
-            Vikedalen.
+          <p className="text-center mt-2 mb-4">
+            Turen starter ved parkeringen til Høyset i Vikedalen.
           </p>
 
           <section className="flex flex-col md:flex-row gap-6 mt-2">
@@ -103,7 +102,7 @@ export default function Rutevelger() {
             </div>
           </section>
 
-          <p className="text-center mb-2 mt-6">
+          <p className="text-center mb-2 mt-4">
             Videre fra parkeringa følger man veien til Høyset, for så å gå opp
             til Gimsdalen.
           </p>
@@ -171,6 +170,14 @@ export default function Rutevelger() {
             </div>
           </section>
 
+          <p className="text-center mt-2">
+            Så krysser man broen & følger stien videre opp.
+          </p>
+
+          <p className="text-center mb-4">
+            Man vil da møte råsen som går fra Blindheimsbakkene
+          </p>
+
           <p className="font-bold text-xl mt-6 flex justify-center">
             Her er turen fra Vikedalen.
           </p>
@@ -199,8 +206,7 @@ export default function Rutevelger() {
           </div>
 
           <p className="text-center mt-2">
-            Man kan også gå opp fra andre siden av Vik elven på
-            Blindheimsbakkane, dette er en god del kortere.
+             På Blindheimsbakkene kjører man av ved en grusvei & frem til parkering, hvor turen starter.
           </p>
           <p className="text-center font-extrabold mb-2">
             ⚠️ Bomvei koster 70 kroner, om man vil ha med seg kjøretøy.
