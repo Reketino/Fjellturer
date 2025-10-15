@@ -8,10 +8,14 @@ import RuteInfo from "@/components/RuteInfo";
 import dynamic from "next/dynamic";
 import Brunstadkollen from "@/components/Brunstadkollen";
 import Brunstadsaetra from "@/components/Brunstadsaeter";
-import RatingSection from "@/components/RatingSection";
+
 
 const Bkollen = Brunstadkollen;
 const Bsaetra = Brunstadsaetra;
+
+const RatingSection = dynamic(() => import("@/components/RatingSection"), {
+  ssr: false,
+});
 
 const HoletindeneMap = dynamic(() => import("@/components/HoletindeneMap"), {
   ssr: false,

@@ -8,7 +8,11 @@ import RuteInfo from "@/components/RuteInfo";
 import dynamic from "next/dynamic";
 import Skiarena from "@/components/Skiarena";
 import Langfjella from "@/components/Langfjella";
-import RatingSection from "@/components/RatingSection";
+
+const RatingSection = dynamic(() => import("@/components/RatingSection"), {
+  ssr: false,
+});
+
 
 const LafjelletMap = dynamic(() => import("@/components/LafjelletMap"), {
   ssr: false,

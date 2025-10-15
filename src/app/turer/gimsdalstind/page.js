@@ -5,9 +5,11 @@ import { useState } from "react";
 import Rutevelger from "@/components/Rutevelger";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import RatingSection from "@/components/RatingSection";
 
 
+const RatingSection = dynamic(() => import("@/components/RatingSection"), {
+  ssr: false,
+});
 
 const Vaerdata = dynamic(() => import("@/components/Vaerdata"), {
   ssr: false,

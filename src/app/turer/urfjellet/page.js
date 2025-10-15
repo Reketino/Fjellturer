@@ -7,7 +7,10 @@ import Image from "next/image";
 import RuteInfo from "@/components/RuteInfo";
 import dynamic from "next/dynamic";
 import Koppen from "@/components/Koppen";
-import RatingSection from "@/components/RatingSection";
+
+const RatingSection = dynamic(() => import("@/components/RatingSection"), {
+  ssr: false,
+});
 
 const UrfjelletMap = dynamic(() => import("@/components/UrrfjelletMap"), {
   ssr: false,
