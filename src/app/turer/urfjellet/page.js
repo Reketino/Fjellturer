@@ -129,7 +129,7 @@ export default function UrfjelletPage() {
        
             <div className="rounded-lg overflow-hidden shadow-lg flex-1">
               <Image
-                src="/urfjelletopp.png"
+                src="/Urfjelletopp.png"
                 alt="Urfjellet sett fra Svadfjellet"
                 width={500}
                 height={400}
