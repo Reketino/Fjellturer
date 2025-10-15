@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 // import Vaerdata from "@/components/Vaerdata";
-import Rating from "@/components/Rating";
 import Rutevelger from "@/components/Rutevelger";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import RatingSection from "@/components/RatingSection";
+
+
 
 const Vaerdata = dynamic(() => import("@/components/Vaerdata"), {
   ssr: false,

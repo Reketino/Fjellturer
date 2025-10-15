@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Rating from "@/components/Rating";
 import Vaerdata from "@/components/Vaerdata";
 import Image from "next/image";
 // import UrfjelletMap from "@/components/UrrfjelletMap";

@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import Rating from "@/components/Rating";
 import Vaerdata from "@/components/Vaerdata";
 // import HoletindeneMap from "@/components/HoletindeneMap";
 import RuteInfo from "@/components/RuteInfo";
