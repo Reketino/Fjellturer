@@ -1,13 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import Rating from "@/components/Rating";
 import Vaerdata from "@/components/Vaerdata";
 import Image from "next/image";
 // import UrfjelletMap from "@/components/UrrfjelletMap";
 import RuteInfo from "@/components/RuteInfo";
 import dynamic from "next/dynamic";
 import Koppen from "@/components/Koppen";
+
+const RatingSection = dynamic(() => import("@/components/RatingSection"), {
+  ssr: false,
+});
 
 const UrfjelletMap = dynamic(() => import("@/components/UrrfjelletMap"), {
   ssr: false,
@@ -196,13 +199,8 @@ export default function UrfjelletPage() {
 
         <h2 className="text-center text-4xl font-bold mt-4 mb-4">God Tur!🚶‍♂️</h2>
 
-        <div className="p-8">
-          <p>Hvor godt likte du forklaringen?</p>
-          <div className="flex justify-center">
-            <Rating max={5} value={rating} onChange={setRating} />
-          </div>
-          <p className="mt-2"> du ga {rating} stjerner</p>
-        </div>
+        <RatingSection page="Urfjellet" />
+        
         <Vaerdata
           title="Urfjellet"
           lat={62.325179}

@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import Rating from "@/components/Rating";
 import Vaerdata from "@/components/Vaerdata";
 // import HoletindeneMap from "@/components/HoletindeneMap";
 import RuteInfo from "@/components/RuteInfo";
@@ -10,8 +9,13 @@ import dynamic from "next/dynamic";
 import Brunstadkollen from "@/components/Brunstadkollen";
 import Brunstadsaetra from "@/components/Brunstadsaeter";
 
+
 const Bkollen = Brunstadkollen;
 const Bsaetra = Brunstadsaetra;
+
+const RatingSection = dynamic(() => import("@/components/RatingSection"), {
+  ssr: false,
+});
 
 const HoletindeneMap = dynamic(() => import("@/components/HoletindeneMap"), {
   ssr: false,
@@ -224,13 +228,7 @@ export default function HoletindenePage() {
 
         <h2 className="text-center text-4xl font-bold mt-4 mb-4">God Tur!🚶‍♂️</h2>
 
-        <div className="p-8 text-center">
-          <p>Hvor godt likte du forklaringen?</p>
-          <div className="flex justify-center">
-            <Rating max={5} value={rating} onChange={setRating} />
-          </div>
-          <p className="text-center mt-2"> du ga {rating} stjerner</p>
-        </div>
+       <RatingSection page="Holetindene" />
 
         <Vaerdata
           title="Holetindene"

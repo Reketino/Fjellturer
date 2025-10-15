@@ -2,11 +2,14 @@
 
 import { useState } from "react";
 // import Vaerdata from "@/components/Vaerdata";
-import Rating from "@/components/Rating";
 import Rutevelger from "@/components/Rutevelger";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
+
+const RatingSection = dynamic(() => import("@/components/RatingSection"), {
+  ssr: false,
+});
 
 const Vaerdata = dynamic(() => import("@/components/Vaerdata"), {
   ssr: false,
@@ -288,11 +291,7 @@ export default function GimsdalstindPage() {
 
       <h2 className="text-center text-2xl font-extrabold mt-6">God Tur⛰️!.</h2>
 
-      <div className="p-8">
-        <p>Hvor godt likte du forklaringen?</p>
-        <Rating max={5} value={rating} onChange={setRating} />
-        <p className="text-center mt-2"> du ga {rating} stjerner</p>
-      </div>
+      <RatingSection page="Gimsdalstind" />
 
       <Vaerdata
         title="Gimsdalstind"
