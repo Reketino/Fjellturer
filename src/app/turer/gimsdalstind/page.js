@@ -6,6 +6,7 @@ import Rating from "@/components/Rating";
 import Rutevelger from "@/components/Rutevelger";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import { supabase } from "@/lib/supabaseClient";
 
 const Vaerdata = dynamic(() => import("@/components/Vaerdata"), {
   ssr: false,
