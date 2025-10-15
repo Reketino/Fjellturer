@@ -7,6 +7,7 @@ import Rutevelger from "@/components/Rutevelger";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
+
 const Vaerdata = dynamic(() => import("@/components/Vaerdata"), {
   ssr: false,
   loading: () => <p>Laster værdata...</p>,
