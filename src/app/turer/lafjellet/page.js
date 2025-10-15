@@ -9,6 +9,7 @@ import RuteInfo from "@/components/RuteInfo";
 import dynamic from "next/dynamic";
 import Skiarena from "@/components/Skiarena";
 import Langfjella from "@/components/Langfjella";
+import RatingSection from "@/components/RatingSection";
 
 const LafjelletMap = dynamic(() => import("@/components/LafjelletMap"), {
   ssr: false,
@@ -258,13 +259,8 @@ export default function LafjelletPage() {
           <LafjelletMap />
         </div>
 
-        <div className="p-8">
-          <p>Hvor godt likte du forklaringen?</p>
-          <div className="flex justify-center">
-            <Rating max={5} value={rating} onChange={setRating} />
-          </div>
-          <p className="mt-2"> du ga {rating} stjerner</p>
-        </div>
+        <RatingSection page="Lafjellet" />
+        
         <Vaerdata
           title="Lafjellet"
           lat={62.32777}
