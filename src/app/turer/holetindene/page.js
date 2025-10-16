@@ -9,7 +9,6 @@ import dynamic from "next/dynamic";
 import Brunstadkollen from "@/components/Brunstadkollen";
 import Brunstadsaetra from "@/components/Brunstadsaeter";
 
-
 const Bkollen = Brunstadkollen;
 const Bsaetra = Brunstadsaetra;
 
@@ -52,7 +51,7 @@ export default function HoletindenePage() {
             className="rounded-3xl object-contain"
           />
         </div>
-        <p className="font-serif italic mb-2 mt-2">
+        <p className="font-serif italic mb-2 mt-0.5">
           Holetindene & Ystevasshornet sett fra Brunstadkollen
         </p>
 
@@ -72,11 +71,11 @@ export default function HoletindenePage() {
           tidsbruk="3-5 timer"
         />
 
-        <p className="font-serif italic mb-2 mt-4">
+        <p className="mt-4">
           Turen til Holetindene starter ved Brunstad Kraftverk, som er
           utgangspunktet til mange flotte turer i området.
         </p>
-        <p className="font-serif italic mb-2 mt-2">
+        <p className="mb-2">
           Parkering ved Brunstad Kraftverk er gratis, og det er god plass til
           mange biler.
         </p>
@@ -90,9 +89,8 @@ export default function HoletindenePage() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
-            <p className="text-center font-semibold mt-2">
-              Her kjører man inn til parkeringen, som ligger ved Brunstad
-              Kraftverk🚗💨.
+            <p className="text-center font-semibold mt-0.5">
+              Her kjører man inn til parkeringen🚗💨.
             </p>
           </div>
 
@@ -105,35 +103,118 @@ export default function HoletindenePage() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
-            <p className="text-center font-semibold mt-2">
+            <p className="text-center font-semibold mt-0.5">
               Her er parkeringen ved Brunstad Kraftverk 🅿️.
             </p>
           </div>
         </section>
 
-        <p className="font-serif italic mt-4">
-          Etter man har fått parkert går turen til Brunstadsætra, som du kan
-          finner beskrivelse på her⬇️.
+        <p className="mt-2">
+          Etter man har fått parkert går turen til Brunstadsætra,
         </p>
-        <div className="mt-4 flex flex-col items-center mb-4">
+        <p className="mb-2">som du finner beskrivelse på her⬇️.</p>
+
+        <div className="flex flex-col items-center mb-4">
           <h2 className="font-semibold text-center">
             Ruten til Brunstadsætra:
           </h2>
           <Brunstadsaetra />
         </div>
 
-        <p className="font-serif italic">
+        <p className="mt-4 mb-2">
           Etter en liten pust i bakken på Brunstadsætra, går turen videre til
-          Brunstadkollen, som du kan finne beskrivelse på her⬇️.
+          Brunstadkollen.
         </p>
-        <div className="mt-4 flex flex-col items-center mb-4">
-          <h2 className="font-semibold text-center">
-            Ruten til Brunstadkollen:
-          </h2>
-          <Brunstadkollen />
-        </div>
 
-        <p className="font-serif italic mt-4 mb-2">
+        <section className="flex-center">
+          <div className="flex-1 mb-2 mt-1">
+            <Image
+              src="/bsaeter.png"
+              alt="Brunstadsaetra"
+              width={800}
+              height={400}
+              className="w-full h-64 sm:h-96 object-contain shadow-md rounded-lg"
+            />
+            <p className="mt-0.5 mb-2 text-center font-bold">
+              Her går man opp.
+            </p>
+          </div>
+        </section>
+
+        <p className="mb-2 mt-4">
+          Det er en god stigning opp fra Brunstadsætra.
+        </p>
+
+        <section className="flex-center mt-2">
+          <div>
+            <Image
+              src="/stgining.png"
+              alt="Stigningen"
+              width={800}
+              height={400}
+              className="w-full h-70 sm:h-96 object-contain shadow-md rounded-lg"
+            />
+            <p className="mt-1 text-center font-bold">
+              Jevn & god stigning oppover.
+            </p>
+          </div>
+        </section>
+
+        <p className="mb-2 mt-4">
+          Etter den bratte stigningen, vil man få god utsikt til Holetindene &
+          Ystevasshornet.
+        </p>
+
+        <section className="flex-center">
+          <div className="flex-1 mb-2 mt-1">
+            <Image
+              src="/utsikttind.png"
+              alt="Utsikt til tinder"
+              width={800}
+              height={400}
+              className="w-full h-64 sm:h-96 object-contain shadow-md rounded-lg"
+            />
+            <p className="mt-0.5 mb-2 text-center font-bold">
+              Utsikt til Holetindene & Ystevasshornet.
+            </p>
+          </div>
+        </section>
+
+        <p className="mb-2 mt-4">
+          Så gjenstår den siste biten mot Brunstadkollen.
+        </p>
+
+        <section className="flex-center mt-2">
+          <div>
+            <Image
+              src="/sistedel.png"
+              alt="Stigning"
+              width={800}
+              height={400}
+              className="w-full h-70 sm:h-96 object-contain shadow-md rounded-lg"
+            />
+            <p className="mt-0.5 text-center font-bold">Råsen flater ut mer.</p>
+          </div>
+        </section>
+
+        <p className="mb-2 mt-4">
+          En god del ur før man kommer bort til Brunstadkollen
+        </p>
+
+        <section className="flex-center">
+          <div className="flex-1 mb-2 mt-1">
+            <Image
+              src="/bkollen.png"
+              alt="Brunstadkollen"
+              width={800}
+              height={400}
+              className="w-full h-64 sm:h-96 object-contain shadow-md rounded-lg"
+            />
+            <p className="mt-0.5 mb-2 text-center font-bold">Brunstadkollen.</p>
+          </div>
+        </section>
+
+        <p className="mt-4 mb-2">
           Etter man har komt til Brunstadkollen gjenstår den siste bratte biten
           opp til Holetindene.
         </p>
@@ -147,7 +228,7 @@ export default function HoletindenePage() {
             className="rounded-lg object-cover"
             unoptimized
           />
-          <p className="font-serif italic text-center font-semibold mt-2">
+          <p className="font-serif italic text-center font-semibold mt-0.5">
             Veien opp til Holetindene.
           </p>
           <p className="text-center mt-2 mb-4">
@@ -172,8 +253,7 @@ export default function HoletindenePage() {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="lg:w-2xl"
-            >
-            </iframe>
+            ></iframe>
           </p>
         </div>
 
@@ -226,9 +306,9 @@ export default function HoletindenePage() {
           </div>
         </section>
 
-        <h2 className="text-center text-4xl font-bold mt-4 mb-4">God Tur!🚶‍♂️</h2>
+        <h2 className="text-center text-4xl font-bold mt-4 mb-4">God Tur!⛰️</h2>
 
-       <RatingSection page="Holetindene" />
+        <RatingSection page="Holetindene" />
 
         <Vaerdata
           title="Holetindene"
