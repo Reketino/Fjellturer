@@ -6,7 +6,6 @@ import Rutevelger from "@/components/Rutevelger";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
-
 const RatingSection = dynamic(() => import("@/components/RatingSection"), {
   ssr: false,
 });
