@@ -6,7 +6,7 @@ import Vaerdata from "@/components/Vaerdata";
 // import HoletindeneMap from "@/components/HoletindeneMap";
 import RuteInfo from "@/components/RuteInfo";
 import dynamic from "next/dynamic";
-import Brunstadkollen from "@/components/Brunstadkollen";
+
 import Brunstadsaetra from "@/components/Brunstadsaeter";
 
 const Bkollen = Brunstadkollen;
