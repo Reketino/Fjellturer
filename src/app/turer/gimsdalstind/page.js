@@ -6,7 +6,6 @@ import Rutevelger from "@/components/Rutevelger";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
-
 const RatingSection = dynamic(() => import("@/components/RatingSection"), {
   ssr: false,
 });
@@ -44,11 +43,11 @@ export default function GimsdalstindPage() {
         Gimsdalstinden sett i fra Gimsdalssætra
       </p>
 
-      <p className="text-center mt-4">
+      <p className="text-center mt-4 font-serif italic">
         Gimsdaldstind er med sine 1007 høydemeter over havet, en av de mange
         flotte turene man kan ta i Sykkylven.
       </p>
-      <p className="text-center mb-4">
+      <p className="text-center mb-4 font-serif italic">
         Turen byr på en magisk utover Sykkylven, Hammarsettindene &
         Straumshornet.
       </p>
@@ -65,10 +64,10 @@ export default function GimsdalstindPage() {
           className="rounded-lg shadow-md w-full h-screen object-contain"
           unoptimized
         />
-        <p className="text-center mt-2 font-bold">
+        <p className="text-center mt-0.5 font-bold">
           Her er plassen hvor hvor råsene møtest.
         </p>
-        <p className="text-center">
+        <p className="text-center mt-1">
           Kommer man fra Blindheimsbakkene fortsetter man til høyre, kommer man
           fra Vikedalen tar man opp til venstre.
         </p>
@@ -88,11 +87,10 @@ export default function GimsdalstindPage() {
             className="rounded-lg shadow-md w-full h-96 object-contain"
           />
           <p className="font-bold text-center">
-            Her starter man oppover mot toppen, og det vil bli en god del
-            brattere.
+            Her starter man oppover mot toppen, her vil det bli brattere.
           </p>
           <p className="font-bold text-center mb-2">
-            Man kommer også inn i noe skog rett oppi her.
+            Man kommer også oppi et skogsparti oppi her.
           </p>
         </div>
       </section>

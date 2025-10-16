@@ -136,9 +136,24 @@ export default function Rutevelger() {
           </section>
 
           <p className="text-center mb-3">
-            Når man kommer til postkassa på Gimsdalen, tar man til høyre ned
+            Når man kommer til postkassa på Gimsdalen tar man til høyre ned
             råsen, man vil da få øye på en bro.
           </p>
+
+          <section className="flex-center">
+            <div className="flex-1 mb-2 mt-1">
+              <Image
+                src="/pkassegdal.png"
+                alt="Postkassen Gimsdal"
+                width={800}
+                height={400}
+                className="w-full h-64 sm:h-96 object-cover shadow-md rounded-lg"
+              />
+              <p className="mt-0.5 text-center mb-4 font-bold">
+                Postkassen på Gimsdalen & hvor man går ned til råsen.
+              </p>
+            </div>
+          </section>
 
           <section className="grid grid-cols-2 gap-6">
             <div>
@@ -206,7 +221,8 @@ export default function Rutevelger() {
           </div>
 
           <p className="text-center mt-2">
-             På Blindheimsbakkene kjører man av ved en grusvei & frem til parkering, hvor turen starter.
+            På Blindheimsbakkene kjører man av ved en grusvei & frem til
+            parkering, hvor turen starter.
           </p>
           <p className="text-center font-extrabold mb-2">
             ⚠️ Bomvei koster 70 kroner, om man vil ha med seg kjøretøy.
