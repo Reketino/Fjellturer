@@ -6,10 +6,8 @@ import Vaerdata from "@/components/Vaerdata";
 // import HoletindeneMap from "@/components/HoletindeneMap";
 import RuteInfo from "@/components/RuteInfo";
 import dynamic from "next/dynamic";
-
 import Brunstadsaetra from "@/components/Brunstadsaeter";
 
-const Bkollen = Brunstadkollen;
 const Bsaetra = Brunstadsaetra;
 
 const RatingSection = dynamic(() => import("@/components/RatingSection"), {
