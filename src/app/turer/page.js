@@ -24,7 +24,7 @@ export default function TurerPage() {
             >
               Gimsdalstind
             </Link>
-            <WeatherCard name="Gimsdalstind" lat={62.3416} lon={6.655} />
+            <WeatherCard name="Gimsdalstind" lat={62.3416} lon={6.655} altitude={1007} />
           </div>
         </div>
 
@@ -36,7 +36,7 @@ export default function TurerPage() {
             >
               Urfjellet
             </Link>
-            <WeatherCard name="Urfjellet" lat={62.32524} lon={6.682276} />
+            <WeatherCard name="Urfjellet" lat={62.32524} lon={6.682276} altitude={1267} />
           </div>
         </div>
 
@@ -48,7 +48,7 @@ export default function TurerPage() {
             >
               Lafjellet
             </Link>
-            <WeatherCard name="Lafjellet" lat={62.327563} lon={6.712384} />
+            <WeatherCard name="Lafjellet" lat={62.327563} lon={6.712384} altitude={1161} />
           </div>
         </div>
 
@@ -62,7 +62,7 @@ export default function TurerPage() {
             >
               Holetindene
             </Link>
-            <WeatherCard name="Holetindene" lat={62.32524} lon={6.682276} />
+            <WeatherCard name="Holetindene" lat={62.32524} lon={6.682276} altitude={1242} />
           </div>
         </div>
       </div>
