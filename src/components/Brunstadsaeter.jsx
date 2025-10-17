@@ -17,7 +17,7 @@ export default function BrunstadsaetraPreview() {
         />
       </div>
       <div className="p-4 bg-white">
-        <h3 className=" text-black font-bold text-lg">Brunstadsaetra</h3>
+        <h3 className=" text-black font-bold text-lg">Brunstadsætra</h3>
         <p className="text-gray-600 text-sm">
           En fin fottur til Brunstadsætra i Sykkylven. Les mer på ut.no!
         </p>

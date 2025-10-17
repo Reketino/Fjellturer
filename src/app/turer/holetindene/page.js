@@ -226,21 +226,22 @@ export default function HoletindenePage() {
             className="rounded-lg object-cover"
             unoptimized
           />
-          <p className="font-serif italic text-center font-semibold mt-0.5">
+          <p className="text-center font-bold mt-0.5">
             Veien opp til Holetindene.
           </p>
-          <p className="text-center mt-2 mb-4">
+          <p className="text-center font-bold mb-2">
             ⚠️ Råsen kan være litt vanskelig å finne.
           </p>
         </div>
 
-        <p className="font-serif italic mt-4">
+        <p className="mt-0.5">
           Det er også mulig å følge hele ryggen opp til Holetind.
         </p>
 
         <div className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center mb-4">
-          <p className="text-center mt-2 mb-2">
-            Legger ved film på den ruten her ⬇
+          <p className="text-center font-bold mt-2 mb-0.5">
+            Film på den ruten her ⬇️
+            </p>
             <iframe
               width="360"
               height="315"
@@ -252,31 +253,30 @@ export default function HoletindenePage() {
               allowFullScreen
               className="lg:w-2xl"
             ></iframe>
-          </p>
         </div>
 
-        <h2 className="text-center text-xl font-extrabold mt-4 mb-4">
+        <h2 className="font-extrabold text-4xl p-2 text-center mb-4">
           Toppen!🏔️
         </h2>
 
-        <section className="rounded-lg overflow-hidden shadow-lg flex flex-col items-center mb-4">
-          <div className="flex justify-center">
+        <section className=" flex flex-col items-center mt-4 mb-4">
+          <div className="object-center">
             <video
               src="/Toppenhtind.mp4"
               autoPlay
               loop
               muted
               playsInline
-              className="rounded-lg shadow-lg  w-[300px] h-[500px] object-cover"
+              className="rounded-lg shadow-lg  w-[500px] h-[500px] object-cover"
             />
           </div>
-          <p className="font-serif italic text-center font-semibold mt-2 mb-4">
-            Her er varden på toppen av Holetind (1242moh)🏔️.
+          <p className="text-center font-bold mt-0.5 mb-4">
+             Varden på toppen av Holetind (1242moh)🏔️.
           </p>
         </section>
 
         <h2 className="text-center text-xl font-extrabold mb-4">
-          Her er rutene opp til Holetindene.
+           Rutene opp til Holetindene.
         </h2>
 
         <section className="flex flex-col md:flex-row justify-center items-start gap-8 mt-2 mb-6">
